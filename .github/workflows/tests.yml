@@ -19,13 +19,16 @@ jobs:
     timeout-minutes: 20
     env:
       MPLBACKEND: Agg
-      MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
-      IPYTHONDIR: ${{ runner.temp }}/ipython
-      JUPYTER_CONFIG_DIR: ${{ runner.temp }}/jupyter-config
-      JUPYTER_DATA_DIR: ${{ runner.temp }}/jupyter-data
-      JUPYTER_RUNTIME_DIR: ${{ runner.temp }}/jupyter-runtime
       PYTHONDONTWRITEBYTECODE: '1'
     steps:
+      - name: Isolate scientific Python runtime state
+        shell: bash
+        run: |
+          for key in MPLCONFIGDIR IPYTHONDIR JUPYTER_CONFIG_DIR JUPYTER_DATA_DIR JUPYTER_RUNTIME_DIR; do
+            directory="$RUNNER_TEMP/$key"
+            mkdir -p "$directory"
+            echo "$key=$directory" >> "$GITHUB_ENV"
+          done
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
