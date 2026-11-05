@@ -1,0 +1,5 @@
+# Stable scientific stack verified for the public Python 3.12 checks.
+# Application requirements remain in requirements.txt; use this with pip -c.
+numpy==1.26.4
+scipy==1.16.1
+matplotlib==3.8.4

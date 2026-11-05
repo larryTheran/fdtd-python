@@ -1,0 +1,12 @@
+{
+  "final_peak_field": 0.9301710950123854,
+  "final_energy_proxy": 3.321320108355309e-07,
+  "peak_energy_proxy": 3.3213641823613954e-07,
+  "remaining_energy_fraction": 0.999986730149521,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 650,
+  "simulation_seconds": 0.00622699991799891,
+  "numpy_version": "2.5.3",
+  "notes": " Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+}

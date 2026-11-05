@@ -1,0 +1,14 @@
+{
+  "final_peak_field": 2.3796681610571353,
+  "final_energy_proxy": 1.3671281012044224e-11,
+  "peak_energy_proxy": 1.3671997449257183e-11,
+  "remaining_energy_fraction": 0.9999475982046063,
+  "dt_seconds": 3.549121972908338e-17,
+  "dx_meters": 2.1280000000000003e-08,
+  "steps": 1800,
+  "dy_meters": 2.1280000000000003e-08,
+  "average_steps": 400,
+  "simulation_seconds": 0.8996179579989985,
+  "numpy_version": "2.5.3",
+  "notes": "Ideal PEC produces full reflection. This is a correction of the intended ideal-mirror experiment, not a claim that n=4 is a perfect conductor."
+}

@@ -1,0 +1,18 @@
+{
+  "final_peak_field": 2.616943218983967,
+  "final_energy_proxy": 3.305814421564007e-11,
+  "peak_energy_proxy": 3.69002288710155e-11,
+  "remaining_energy_fraction": 0.8958791104303062,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 1200,
+  "dy_meters": 5.3200000000000007e-08,
+  "average_steps": 160,
+  "detector_distance_m": 5.320000000000001e-06,
+  "slit_width_m": 2.66e-07,
+  "fresnel_number_each_slit": 0.025,
+  "fresnel_number_full_aperture": 0.4,
+  "simulation_seconds": 0.6891004160279408,
+  "numpy_version": "2.5.3",
+  "notes": "Preserves the separate prose case b=5 and L=100; captions specify a different b=10 case."
+}

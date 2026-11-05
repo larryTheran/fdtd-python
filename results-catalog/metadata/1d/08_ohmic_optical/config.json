@@ -1,0 +1,33 @@
+{
+  "name": "08_ohmic_optical",
+  "title": "1D Ohmic loss at optical SI scales",
+  "thesis": "4.1.9; Fig. 4-18 parameters; printed p. 58",
+  "cells": 400,
+  "steps": 4000,
+  "wavelength": 5e-07,
+  "points_per_wavelength": 10.0,
+  "dx": null,
+  "courant": 0.5,
+  "boundary": "delay",
+  "source": "gaussian",
+  "injection": "tfsf",
+  "source_cell": 9,
+  "tau_periods": 0.5,
+  "layers": [
+    {
+      "start": 149,
+      "stop": 300,
+      "epsilon_r": 4,
+      "sigma": 0.04
+    }
+  ],
+  "loss_model": "ohmic",
+  "spectra": true,
+  "snapshots": [
+    200,
+    350,
+    400,
+    550
+  ],
+  "notes": "Literal sigma=0.04 S/m at 500 nm gives very weak loss. The original visible attenuation used a later dx=0.01 m override; see experiment 09."
+}

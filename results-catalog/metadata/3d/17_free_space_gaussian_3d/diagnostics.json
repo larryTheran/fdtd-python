@@ -1,0 +1,42 @@
+{
+  "name": "17_free_space_gaussian_3d",
+  "origin_2d": "experiments/two_d/17_free_space_gaussian.py",
+  "grid": [
+    200,
+    200,
+    64
+  ],
+  "steps": 350,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 4.2391289580846205,
+  "dt_s": 5.773502691896258e-13,
+  "spacing_m": [
+    0.0003461705126546392,
+    0.0003461705126546392,
+    0.0003461705126546392
+  ],
+  "duration_s": 2.0207259421636904e-10,
+  "cfl_ratio": 0.8660254037844386,
+  "minimum_cells_per_material_wavelength": 17.32050807568877,
+  "field_component_max": {
+    "ex": 4.1688385009765625,
+    "ey": 4.168854713439941,
+    "ez": 10.23325252532959,
+    "hx": 0.0003629858256317675,
+    "hy": 0.0006643544766120613,
+    "hz": 4.76837158203125e-07
+  },
+  "energy_final_over_peak": 0.9999985762909102,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 277,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": " PEC cavity in all three dimensions; the source is a localized z-directed electric dipole."
+}

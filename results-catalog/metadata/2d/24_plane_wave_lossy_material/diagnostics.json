@@ -1,0 +1,14 @@
+{
+  "final_peak_field": 1.0792019269207946,
+  "final_energy_proxy": 0.0035664472647850705,
+  "peak_energy_proxy": 0.0035672923214470124,
+  "remaining_energy_fraction": 0.9997631097802495,
+  "dt_seconds": 5.773502691896258e-13,
+  "dx_meters": 0.0003461705126546392,
+  "steps": 1800,
+  "dy_meters": 0.0003461705126546392,
+  "average_steps": 277,
+  "simulation_seconds": 0.8881260409252718,
+  "numpy_version": "2.5.3",
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "final_peak_field": 2.3098086679201266,
+  "final_energy_proxy": 2.820503500340408e-11,
+  "peak_energy_proxy": 3.148057475766482e-11,
+  "remaining_energy_fraction": 0.8959504462839193,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 900,
+  "dy_meters": 5.3200000000000007e-08,
+  "average_steps": 160,
+  "detector_distance_m": 7.980000000000001e-07,
+  "slit_width_m": 5.32e-07,
+  "fresnel_number_each_slit": 0.6666666666666667,
+  "fresnel_number_full_aperture": 6.0,
+  "simulation_seconds": 0.2511241249740124,
+  "numpy_version": "2.5.3",
+  "notes": "Uses caption dimensions. L=15 is not Fraunhofer for the full 30-cell aperture; report full-aperture Fresnel number. Periodic x represents an aperture array."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "28_double_slit_L5_3d",
+  "origin_2d": "experiments/two_d/28_double_slit_L5.py",
+  "grid": [
+    200,
+    200,
+    64
+  ],
+  "steps": 900,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 15.206300499965437,
+  "dt_s": 8.872804932270845e-17,
+  "spacing_m": [
+    5.3200000000000007e-08,
+    5.3200000000000007e-08,
+    5.3200000000000007e-08
+  ],
+  "duration_s": 7.98552443904376e-14,
+  "cfl_ratio": 0.8660254037844387,
+  "minimum_cells_per_material_wavelength": 10.0,
+  "field_component_max": {
+    "ex": 0.6583285331726074,
+    "ey": 0.9158310890197754,
+    "ez": 2.1206555366516113,
+    "hx": 1.509379506111145,
+    "hy": 2.4924213886260986,
+    "hz": 2.1589291095733643
+  },
+  "energy_final_over_peak": 1.0,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 160,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "Uses caption dimensions. L=15 is not Fraunhofer for the full 30-cell aperture; report full-aperture Fresnel number. Periodic x represents an aperture array. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+}

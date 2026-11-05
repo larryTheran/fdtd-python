@@ -1,0 +1,2100 @@
+[
+  {
+    "name": "01_free_space",
+    "dimension": "1d",
+    "title": "1D free-space pulse with zero exterior ghosts",
+    "source_script": "experiments/one_d/01_free_space.py",
+    "original_directory": "results/01_free_space",
+    "size_bytes": 611498,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/01_free_space/energy.png",
+      "previews/1d/01_free_space/fields.png",
+      "previews/1d/01_free_space/materials.png"
+    ],
+    "metadata": [
+      "metadata/1d/01_free_space/config.json",
+      "metadata/1d/01_free_space/diagnostics.json"
+    ],
+    "steps": 300,
+    "grid": [
+      200
+    ],
+    "thesis_reference": "4.1.4; Fig. 4-5; printed p. 42",
+    "notes": "Corrected last-cell index from sin_nada_modi. Zero ghosts reflect; they are not an absorbing boundary. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+  },
+  {
+    "name": "02_absorbing_boundary",
+    "dimension": "1d",
+    "title": "1D pulse with the thesis delay ABC",
+    "source_script": "experiments/one_d/02_absorbing_boundary.py",
+    "original_directory": "results/02_absorbing_boundary",
+    "size_bytes": 641999,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/02_absorbing_boundary/energy.png",
+      "previews/1d/02_absorbing_boundary/fields.png",
+      "previews/1d/02_absorbing_boundary/materials.png"
+    ],
+    "metadata": [
+      "metadata/1d/02_absorbing_boundary/config.json",
+      "metadata/1d/02_absorbing_boundary/diagnostics.json"
+    ],
+    "steps": 300,
+    "grid": [
+      200
+    ],
+    "thesis_reference": "4.1.5; Fig. 4-7; printed p. 45",
+    "notes": "The thesis calls this PEC. It is a two-step delay absorbing boundary at S=0.5. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+  },
+  {
+    "name": "03_tfsf_pulse",
+    "dimension": "1d",
+    "title": "1D one-way TF/SF pulse",
+    "source_script": "experiments/one_d/03_tfsf_pulse.py",
+    "original_directory": "results/03_tfsf_pulse",
+    "size_bytes": 631484,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/03_tfsf_pulse/energy.png",
+      "previews/1d/03_tfsf_pulse/fields.png",
+      "previews/1d/03_tfsf_pulse/materials.png"
+    ],
+    "metadata": [
+      "metadata/1d/03_tfsf_pulse/config.json",
+      "metadata/1d/03_tfsf_pulse/diagnostics.json"
+    ],
+    "steps": 300,
+    "grid": [
+      200
+    ],
+    "thesis_reference": "4.1.6; Fig. 4-9; printed p. 48",
+    "notes": " Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+  },
+  {
+    "name": "04_periodic_boundary",
+    "dimension": "1d",
+    "title": "1D pulse with periodic boundaries",
+    "source_script": "experiments/one_d/04_periodic_boundary.py",
+    "original_directory": "results/04_periodic_boundary",
+    "size_bytes": 652752,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/04_periodic_boundary/energy.png",
+      "previews/1d/04_periodic_boundary/fields.png",
+      "previews/1d/04_periodic_boundary/materials.png"
+    ],
+    "metadata": [
+      "metadata/1d/04_periodic_boundary/config.json",
+      "metadata/1d/04_periodic_boundary/diagnostics.json"
+    ],
+    "steps": 650,
+    "grid": [
+      200
+    ],
+    "thesis_reference": "4.1.6; Fig. 4-10; printed p. 49",
+    "notes": " Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+  },
+  {
+    "name": "05_free_space_spectra",
+    "dimension": "1d",
+    "title": "1D reflection and transmission in vacuum",
+    "source_script": "experiments/one_d/05_free_space_spectra.py",
+    "original_directory": "results/05_free_space_spectra",
+    "size_bytes": 613829,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/05_free_space_spectra/energy.png",
+      "previews/1d/05_free_space_spectra/fields.png",
+      "previews/1d/05_free_space_spectra/materials.png",
+      "previews/1d/05_free_space_spectra/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/05_free_space_spectra/config.json",
+      "metadata/1d/05_free_space_spectra/diagnostics.json"
+    ],
+    "steps": 800,
+    "grid": [
+      200
+    ],
+    "thesis_reference": "4.1.7; Figs. 4-12, 4-13; printed pp. 51-52",
+    "notes": "Run extended to let the reference pulse leave; left monitor is inside the total-field region and baseline-subtracted. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+  },
+  {
+    "name": "06_lossless_two_layers",
+    "dimension": "1d",
+    "title": "1D two lossless dielectric layers",
+    "source_script": "experiments/one_d/06_lossless_two_layers.py",
+    "original_directory": "results/06_lossless_two_layers",
+    "size_bytes": 1020785,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/06_lossless_two_layers/energy.png",
+      "previews/1d/06_lossless_two_layers/fields.png",
+      "previews/1d/06_lossless_two_layers/materials.png",
+      "previews/1d/06_lossless_two_layers/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/06_lossless_two_layers/config.json",
+      "metadata/1d/06_lossless_two_layers/diagnostics.json"
+    ],
+    "steps": 4000,
+    "grid": [
+      400
+    ],
+    "thesis_reference": "4.1.8; Figs. 4-14 to 4-17; printed pp. 53-55",
+    "notes": "Uses the thesis 532 nm rather than the draft 500 nm. 1-R-T is a finite-record spectral residual, not instantaneous stored energy."
+  },
+  {
+    "name": "07_configurable_layers",
+    "dimension": "1d",
+    "title": "1D configurable dielectric stack",
+    "source_script": "experiments/one_d/07_configurable_layers.py",
+    "original_directory": "results/07_configurable_layers",
+    "size_bytes": 962318,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/07_configurable_layers/energy.png",
+      "previews/1d/07_configurable_layers/fields.png",
+      "previews/1d/07_configurable_layers/materials.png",
+      "previews/1d/07_configurable_layers/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/07_configurable_layers/config.json",
+      "metadata/1d/07_configurable_layers/diagnostics.json"
+    ],
+    "steps": 4000,
+    "grid": [
+      400
+    ],
+    "thesis_reference": "1D/FDTD_1D_5 MATLAB extension of 4.1.8",
+    "notes": "Edit the Layer list to set any number of slabs; replaces interactive MATLAB input prompts."
+  },
+  {
+    "name": "08_ohmic_optical",
+    "dimension": "1d",
+    "title": "1D Ohmic loss at optical SI scales",
+    "source_script": "experiments/one_d/08_ohmic_optical.py",
+    "original_directory": "results/08_ohmic_optical",
+    "size_bytes": 1017301,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/08_ohmic_optical/energy.png",
+      "previews/1d/08_ohmic_optical/fields.png",
+      "previews/1d/08_ohmic_optical/materials.png",
+      "previews/1d/08_ohmic_optical/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/08_ohmic_optical/config.json",
+      "metadata/1d/08_ohmic_optical/diagnostics.json"
+    ],
+    "steps": 4000,
+    "grid": [
+      400
+    ],
+    "thesis_reference": "4.1.9; Fig. 4-18 parameters; printed p. 58",
+    "notes": "Literal sigma=0.04 S/m at 500 nm gives very weak loss. The original visible attenuation used a later dx=0.01 m override; see experiment 09."
+  },
+  {
+    "name": "09_ohmic_centimeter",
+    "dimension": "1d",
+    "title": "1D Ohmic attenuation on the legacy cm grid",
+    "source_script": "experiments/one_d/09_ohmic_centimeter.py",
+    "original_directory": "results/09_ohmic_centimeter",
+    "size_bytes": 782465,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/09_ohmic_centimeter/energy.png",
+      "previews/1d/09_ohmic_centimeter/fields.png",
+      "previews/1d/09_ohmic_centimeter/materials.png",
+      "previews/1d/09_ohmic_centimeter/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/09_ohmic_centimeter/config.json",
+      "metadata/1d/09_ohmic_centimeter/diagnostics.json"
+    ],
+    "steps": 2000,
+    "grid": [
+      400
+    ],
+    "thesis_reference": "4.1.9; Fig. 4-18 visual reconstruction",
+    "notes": "Consistent microwave reinterpretation: dx=1 cm, lambda=20 cm, sigma=0.04 S/m. This is not an optical simulation."
+  },
+  {
+    "name": "10_integral_loss_0p01",
+    "dimension": "1d",
+    "title": "1D integral-current loss, sigma=0.01 S/m",
+    "source_script": "experiments/one_d/10_integral_loss_0p01.py",
+    "original_directory": "results/10_integral_loss_0p01",
+    "size_bytes": 796899,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/10_integral_loss_0p01/energy.png",
+      "previews/1d/10_integral_loss_0p01/fields.png",
+      "previews/1d/10_integral_loss_0p01/materials.png",
+      "previews/1d/10_integral_loss_0p01/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/10_integral_loss_0p01/config.json",
+      "metadata/1d/10_integral_loss_0p01/diagnostics.json"
+    ],
+    "steps": 3000,
+    "grid": [
+      400
+    ],
+    "thesis_reference": "4.1.10; Fig. 4-19; printed p. 62",
+    "notes": "D/E/I conductive model with corrected positive denominator. Consistent cm-grid reinterpretation; original optical labels conflicted with the actual time step. No fitted 70% or 90% loss target."
+  },
+  {
+    "name": "11_integral_loss_0p004",
+    "dimension": "1d",
+    "title": "1D integral-current loss, sigma=0.004 S/m",
+    "source_script": "experiments/one_d/11_integral_loss_0p004.py",
+    "original_directory": "results/11_integral_loss_0p004",
+    "size_bytes": 810432,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/11_integral_loss_0p004/energy.png",
+      "previews/1d/11_integral_loss_0p004/fields.png",
+      "previews/1d/11_integral_loss_0p004/materials.png",
+      "previews/1d/11_integral_loss_0p004/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/11_integral_loss_0p004/config.json",
+      "metadata/1d/11_integral_loss_0p004/diagnostics.json"
+    ],
+    "steps": 3000,
+    "grid": [
+      400
+    ],
+    "thesis_reference": "4.1.10; Fig. 4-20; printed p. 63",
+    "notes": "D/E/I conductive model with corrected positive denominator. Consistent cm-grid reinterpretation; original optical labels conflicted with the actual time step. No fitted 70% or 90% loss target."
+  },
+  {
+    "name": "12_integral_loss_optical",
+    "dimension": "1d",
+    "title": "1D integral-current loss at optical SI scales",
+    "source_script": "experiments/one_d/12_integral_loss_optical.py",
+    "original_directory": "results/12_integral_loss_optical",
+    "size_bytes": 843951,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/12_integral_loss_optical/energy.png",
+      "previews/1d/12_integral_loss_optical/fields.png",
+      "previews/1d/12_integral_loss_optical/materials.png",
+      "previews/1d/12_integral_loss_optical/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/12_integral_loss_optical/config.json",
+      "metadata/1d/12_integral_loss_optical/diagnostics.json"
+    ],
+    "steps": 3000,
+    "grid": [
+      400
+    ],
+    "thesis_reference": "4.1.10; optical interpretation of Figs. 4-19 and 4-20",
+    "notes": "Same SI conductivity as Fig. 4-19, with a consistently optical time grid; not a Debye, Drude or Lorentz dispersive model."
+  },
+  {
+    "name": "13_periodic_dielectric_stack",
+    "dimension": "1d",
+    "title": "1D alternating dielectric stack at 5 GHz",
+    "source_script": "experiments/one_d/13_periodic_dielectric_stack.py",
+    "original_directory": "results/13_periodic_dielectric_stack",
+    "size_bytes": 4854458,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/13_periodic_dielectric_stack/energy.png",
+      "previews/1d/13_periodic_dielectric_stack/fields.png",
+      "previews/1d/13_periodic_dielectric_stack/materials.png",
+      "previews/1d/13_periodic_dielectric_stack/spectra.png"
+    ],
+    "metadata": [
+      "metadata/1d/13_periodic_dielectric_stack/config.json",
+      "metadata/1d/13_periodic_dielectric_stack/diagnostics.json"
+    ],
+    "steps": 64000,
+    "grid": [
+      1000
+    ],
+    "thesis_reference": "1D/FDTD_1D_8/FDTD_1D_Dielectrico_periodico.m",
+    "notes": "Periodic MATERIAL stack, open boundaries. Extended beyond the broken MATLAB 1000-sample source buffer and 3000-step loop to 64000 steps to capture high-Q resonances and delayed transmission; finite-record conservation checked."
+  },
+  {
+    "name": "14_pec_reflection",
+    "dimension": "1d",
+    "title": "1D reflection from actual PEC endpoints",
+    "source_script": "experiments/one_d/14_pec_reflection.py",
+    "original_directory": "results/14_pec_reflection",
+    "size_bytes": 629566,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-1d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip",
+    "previews": [
+      "previews/1d/14_pec_reflection/energy.png",
+      "previews/1d/14_pec_reflection/fields.png",
+      "previews/1d/14_pec_reflection/materials.png"
+    ],
+    "metadata": [
+      "metadata/1d/14_pec_reflection/config.json",
+      "metadata/1d/14_pec_reflection/diagnostics.json"
+    ],
+    "steps": 600,
+    "grid": [
+      200
+    ],
+    "thesis_reference": "Supplement: clarify boundary terminology in 4.1.5",
+    "notes": ""
+  },
+  {
+    "name": "15_free_space_sine",
+    "dimension": "2d",
+    "title": "2D free-space sinusoidal point source",
+    "source_script": "experiments/two_d/15_free_space_sine.py",
+    "original_directory": "results/15_free_space_sine",
+    "size_bytes": 5757844,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/15_free_space_sine/energy.png",
+      "previews/2d/15_free_space_sine/fields.png",
+      "previews/2d/15_free_space_sine/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/15_free_space_sine/config.json",
+      "metadata/2d/15_free_space_sine/diagnostics.json"
+    ],
+    "steps": 350,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "5.1.4; Fig. 5-6; printed p. 71",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+  },
+  {
+    "name": "16_free_space_modulated",
+    "dimension": "2d",
+    "title": "2D modulated point pulse, reflecting edges",
+    "source_script": "experiments/two_d/16_free_space_modulated.py",
+    "original_directory": "results/16_free_space_modulated",
+    "size_bytes": 8250527,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/16_free_space_modulated/energy.png",
+      "previews/2d/16_free_space_modulated/fields.png",
+      "previews/2d/16_free_space_modulated/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/16_free_space_modulated/config.json",
+      "metadata/2d/16_free_space_modulated/diagnostics.json"
+    ],
+    "steps": 350,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "5.1.4; Fig. 5-7; printed p. 72",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+  },
+  {
+    "name": "17_free_space_gaussian",
+    "dimension": "2d",
+    "title": "2D Gaussian point pulse",
+    "source_script": "experiments/two_d/17_free_space_gaussian.py",
+    "original_directory": "results/17_free_space_gaussian",
+    "size_bytes": 8793982,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/17_free_space_gaussian/energy.png",
+      "previews/2d/17_free_space_gaussian/fields.png",
+      "previews/2d/17_free_space_gaussian/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/17_free_space_gaussian/config.json",
+      "metadata/2d/17_free_space_gaussian/diagnostics.json"
+    ],
+    "steps": 350,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "2D/FDTD_2D_1/FDTD_2D_libre.m",
+    "notes": ""
+  },
+  {
+    "name": "18_periodic_xy",
+    "dimension": "2d",
+    "title": "2D pulse with periodic x and y boundaries",
+    "source_script": "experiments/two_d/18_periodic_xy.py",
+    "original_directory": "results/18_periodic_xy",
+    "size_bytes": 8250089,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/18_periodic_xy/energy.png",
+      "previews/2d/18_periodic_xy/fields.png",
+      "previews/2d/18_periodic_xy/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/18_periodic_xy/config.json",
+      "metadata/2d/18_periodic_xy/diagnostics.json"
+    ],
+    "steps": 500,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "5.1.5; Fig. 5-8; printed p. 73",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+  },
+  {
+    "name": "19_pml_xy",
+    "dimension": "2d",
+    "title": "2D pulse with PML on all four sides",
+    "source_script": "experiments/two_d/19_pml_xy.py",
+    "original_directory": "results/19_pml_xy",
+    "size_bytes": 10146485,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/19_pml_xy/energy.png",
+      "previews/2d/19_pml_xy/fields.png",
+      "previews/2d/19_pml_xy/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/19_pml_xy/config.json",
+      "metadata/2d/19_pml_xy/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "5.1.6; Fig. 5-10; printed p. 79",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+  },
+  {
+    "name": "20_pml_x_periodic_y",
+    "dimension": "2d",
+    "title": "2D PML in x, periodic in y",
+    "source_script": "experiments/two_d/20_pml_x_periodic_y.py",
+    "original_directory": "results/20_pml_x_periodic_y",
+    "size_bytes": 9127615,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/20_pml_x_periodic_y/energy.png",
+      "previews/2d/20_pml_x_periodic_y/fields.png",
+      "previews/2d/20_pml_x_periodic_y/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/20_pml_x_periodic_y/config.json",
+      "metadata/2d/20_pml_x_periodic_y/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "5.1.6; Fig. 5-11; printed p. 80",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+  },
+  {
+    "name": "21_periodic_x_pml_y",
+    "dimension": "2d",
+    "title": "2D periodic in x, PML in y",
+    "source_script": "experiments/two_d/21_periodic_x_pml_y.py",
+    "original_directory": "results/21_periodic_x_pml_y",
+    "size_bytes": 11348158,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/21_periodic_x_pml_y/energy.png",
+      "previews/2d/21_periodic_x_pml_y/fields.png",
+      "previews/2d/21_periodic_x_pml_y/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/21_periodic_x_pml_y/config.json",
+      "metadata/2d/21_periodic_x_pml_y/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "5.1.6; Fig. 5-12; printed p. 80",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+  },
+  {
+    "name": "22_huygens_plane_wave",
+    "dimension": "2d",
+    "title": "2D plane wave from an aligned source array",
+    "source_script": "experiments/two_d/22_huygens_plane_wave.py",
+    "original_directory": "results/22_huygens_plane_wave",
+    "size_bytes": 1531784,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/22_huygens_plane_wave/energy.png",
+      "previews/2d/22_huygens_plane_wave/fields.png",
+      "previews/2d/22_huygens_plane_wave/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/22_huygens_plane_wave/config.json",
+      "metadata/2d/22_huygens_plane_wave/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "5.2; Fig. 5-13; printed p. 81",
+    "notes": "Sources span x and propagate along y, so x is periodic and y is PML. The thesis caption swaps these axes. Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+  },
+  {
+    "name": "23_tfsf_plane_wave",
+    "dimension": "2d",
+    "title": "2D one-way plane wave using TF/SF",
+    "source_script": "experiments/two_d/23_tfsf_plane_wave.py",
+    "original_directory": "results/23_tfsf_plane_wave",
+    "size_bytes": 860107,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/23_tfsf_plane_wave/energy.png",
+      "previews/2d/23_tfsf_plane_wave/fields.png",
+      "previews/2d/23_tfsf_plane_wave/materials_and_intensity.png",
+      "previews/2d/23_tfsf_plane_wave/spectra.png"
+    ],
+    "metadata": [
+      "metadata/2d/23_tfsf_plane_wave/config.json",
+      "metadata/2d/23_tfsf_plane_wave/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "2D/FDTD_2D_2 TF/SF draft and Untitled7.m",
+    "notes": ""
+  },
+  {
+    "name": "24_plane_wave_lossy_material",
+    "dimension": "2d",
+    "title": "2D plane wave entering a lossy dielectric",
+    "source_script": "experiments/two_d/24_plane_wave_lossy_material.py",
+    "original_directory": "results/24_plane_wave_lossy_material",
+    "size_bytes": 1540443,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/24_plane_wave_lossy_material/energy.png",
+      "previews/2d/24_plane_wave_lossy_material/fields.png",
+      "previews/2d/24_plane_wave_lossy_material/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/24_plane_wave_lossy_material/config.json",
+      "metadata/2d/24_plane_wave_lossy_material/diagnostics.json"
+    ],
+    "steps": 1800,
+    "grid": [
+      200,
+      400
+    ],
+    "thesis_reference": "2D/FDTD_2D_2 material_onda_plana.m",
+    "notes": ""
+  },
+  {
+    "name": "25_single_slit_L25",
+    "dimension": "2d",
+    "title": "Single slit b=10, detector distance=25 cells",
+    "source_script": "experiments/two_d/25_single_slit_L25.py",
+    "original_directory": "results/25_single_slit_L25",
+    "size_bytes": 14037013,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/25_single_slit_L25/detector.png",
+      "previews/2d/25_single_slit_L25/energy.png",
+      "previews/2d/25_single_slit_L25/fields.png",
+      "previews/2d/25_single_slit_L25/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/25_single_slit_L25/config.json",
+      "metadata/2d/25_single_slit_L25/diagnostics.json"
+    ],
+    "steps": 900,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "6.1; Figs. 6-2 to 6-4; printed pp. 84-86",
+    "notes": "10 cells per vacuum wavelength; exact PEC obstacle; detector distance measured from the exit face. Periodic x represents repeated apertures and can affect late-time patterns."
+  },
+  {
+    "name": "26_single_slit_L30",
+    "dimension": "2d",
+    "title": "Single slit b=10, detector distance=30 cells",
+    "source_script": "experiments/two_d/26_single_slit_L30.py",
+    "original_directory": "results/26_single_slit_L30",
+    "size_bytes": 14036347,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/26_single_slit_L30/detector.png",
+      "previews/2d/26_single_slit_L30/energy.png",
+      "previews/2d/26_single_slit_L30/fields.png",
+      "previews/2d/26_single_slit_L30/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/26_single_slit_L30/config.json",
+      "metadata/2d/26_single_slit_L30/diagnostics.json"
+    ],
+    "steps": 900,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "6.1; Figs. 6-2 to 6-4; printed pp. 84-86",
+    "notes": "10 cells per vacuum wavelength; exact PEC obstacle; detector distance measured from the exit face. Periodic x represents repeated apertures and can affect late-time patterns."
+  },
+  {
+    "name": "27_single_slit_far_field",
+    "dimension": "2d",
+    "title": "Single slit with extended observation region",
+    "source_script": "experiments/two_d/27_single_slit_far_field.py",
+    "original_directory": "results/27_single_slit_far_field",
+    "size_bytes": 53116505,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/27_single_slit_far_field/detector.png",
+      "previews/2d/27_single_slit_far_field/energy.png",
+      "previews/2d/27_single_slit_far_field/fields.png",
+      "previews/2d/27_single_slit_far_field/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/27_single_slit_far_field/config.json",
+      "metadata/2d/27_single_slit_far_field/diagnostics.json"
+    ],
+    "steps": 1700,
+    "grid": [
+      400,
+      500
+    ],
+    "thesis_reference": "6.1; Figs. 6-5 to 6-7; printed pp. 87-88",
+    "notes": "Extended domain with all-side PML to suppress replicas. Chosen L=300 cells gives full-aperture Fresnel number 0.033; exact L is not specified for Fig. 6-7."
+  },
+  {
+    "name": "28_double_slit_L5",
+    "dimension": "2d",
+    "title": "Double slit b=10, gap=10, detector distance=5",
+    "source_script": "experiments/two_d/28_double_slit_L5.py",
+    "original_directory": "results/28_double_slit_L5",
+    "size_bytes": 14691398,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/28_double_slit_L5/detector.png",
+      "previews/2d/28_double_slit_L5/energy.png",
+      "previews/2d/28_double_slit_L5/fields.png",
+      "previews/2d/28_double_slit_L5/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/28_double_slit_L5/config.json",
+      "metadata/2d/28_double_slit_L5/diagnostics.json"
+    ],
+    "steps": 900,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "6.1; Figs. 6-10 and 6-11 captions; printed pp. 90-91",
+    "notes": "Uses caption dimensions. L=15 is not Fraunhofer for the full 30-cell aperture; report full-aperture Fresnel number. Periodic x represents an aperture array."
+  },
+  {
+    "name": "29_double_slit_L15",
+    "dimension": "2d",
+    "title": "Double slit b=10, gap=10, detector distance=15",
+    "source_script": "experiments/two_d/29_double_slit_L15.py",
+    "original_directory": "results/29_double_slit_L15",
+    "size_bytes": 14689675,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/29_double_slit_L15/detector.png",
+      "previews/2d/29_double_slit_L15/energy.png",
+      "previews/2d/29_double_slit_L15/fields.png",
+      "previews/2d/29_double_slit_L15/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/29_double_slit_L15/config.json",
+      "metadata/2d/29_double_slit_L15/diagnostics.json"
+    ],
+    "steps": 900,
+    "grid": [
+      200,
+      200
+    ],
+    "thesis_reference": "6.1; Figs. 6-10 and 6-11 captions; printed pp. 90-91",
+    "notes": "Uses caption dimensions. L=15 is not Fraunhofer for the full 30-cell aperture; report full-aperture Fresnel number. Periodic x represents an aperture array."
+  },
+  {
+    "name": "30_double_slit_b5_L100",
+    "dimension": "2d",
+    "title": "Double slit b=5 with a distant detector",
+    "source_script": "experiments/two_d/30_double_slit_b5_L100.py",
+    "original_directory": "results/30_double_slit_b5_L100",
+    "size_bytes": 25292057,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/30_double_slit_b5_L100/detector.png",
+      "previews/2d/30_double_slit_b5_L100/energy.png",
+      "previews/2d/30_double_slit_b5_L100/fields.png",
+      "previews/2d/30_double_slit_b5_L100/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/30_double_slit_b5_L100/config.json",
+      "metadata/2d/30_double_slit_b5_L100/diagnostics.json"
+    ],
+    "steps": 1200,
+    "grid": [
+      300,
+      300
+    ],
+    "thesis_reference": "6.1; prose following Fig. 6-9; printed pp. 89-90",
+    "notes": "Preserves the separate prose case b=5 and L=100; captions specify a different b=10 case."
+  },
+  {
+    "name": "31_refraction_two_media",
+    "dimension": "2d",
+    "title": "Refraction from n=1.5 to n=2.1",
+    "source_script": "experiments/two_d/31_refraction_two_media.py",
+    "original_directory": "results/31_refraction_two_media",
+    "size_bytes": 23874293,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/31_refraction_two_media/energy.png",
+      "previews/2d/31_refraction_two_media/fields.png",
+      "previews/2d/31_refraction_two_media/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/31_refraction_two_media/config.json",
+      "metadata/2d/31_refraction_two_media/diagnostics.json"
+    ],
+    "steps": 1800,
+    "grid": [
+      250,
+      300
+    ],
+    "thesis_reference": "6.2; Fig. 6-14; printed p. 94",
+    "notes": "532 nm from thesis; 25 vacuum cells/wavelength. Finite phased beam replaces the under-resolved draft source. Angles are measured from +y; epsilon_r=n^2."
+  },
+  {
+    "name": "32_high_index_reflection",
+    "dimension": "2d",
+    "title": "Reflection and transmission from n=1.5 to n=4",
+    "source_script": "experiments/two_d/32_high_index_reflection.py",
+    "original_directory": "results/32_high_index_reflection",
+    "size_bytes": 22480254,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/32_high_index_reflection/energy.png",
+      "previews/2d/32_high_index_reflection/fields.png",
+      "previews/2d/32_high_index_reflection/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/32_high_index_reflection/config.json",
+      "metadata/2d/32_high_index_reflection/diagnostics.json"
+    ],
+    "steps": 1800,
+    "grid": [
+      250,
+      300
+    ],
+    "thesis_reference": "6.2; Fig. 6-15; printed p. 95",
+    "notes": "The specified n=1.5 to n=4 interface only partially reflects. It cannot produce total internal reflection. A separate PEC example supplies the ideal specular mirror."
+  },
+  {
+    "name": "33_specular_pec_mirror",
+    "dimension": "2d",
+    "title": "Specular reflection from an ideal PEC mirror",
+    "source_script": "experiments/two_d/33_specular_pec_mirror.py",
+    "original_directory": "results/33_specular_pec_mirror",
+    "size_bytes": 13628871,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/33_specular_pec_mirror/energy.png",
+      "previews/2d/33_specular_pec_mirror/fields.png",
+      "previews/2d/33_specular_pec_mirror/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/33_specular_pec_mirror/config.json",
+      "metadata/2d/33_specular_pec_mirror/diagnostics.json"
+    ],
+    "steps": 1800,
+    "grid": [
+      250,
+      300
+    ],
+    "thesis_reference": "6.2; intended ideal reflector in Fig. 6-15",
+    "notes": "Ideal PEC produces full reflection. This is a correction of the intended ideal-mirror experiment, not a claim that n=4 is a perfect conductor."
+  },
+  {
+    "name": "34_refraction_three_media",
+    "dimension": "2d",
+    "title": "Refraction through n=1.5 / 2.5 / 1.5",
+    "source_script": "experiments/two_d/34_refraction_three_media.py",
+    "original_directory": "results/34_refraction_three_media",
+    "size_bytes": 10326036,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/34_refraction_three_media/energy.png",
+      "previews/2d/34_refraction_three_media/fields.png",
+      "previews/2d/34_refraction_three_media/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/34_refraction_three_media/config.json",
+      "metadata/2d/34_refraction_three_media/diagnostics.json"
+    ],
+    "steps": 2200,
+    "grid": [
+      250,
+      300
+    ],
+    "thesis_reference": "6.2; Fig. 6-16; printed p. 96",
+    "notes": "Three dielectric regions with parallel interfaces; first and last index are equal. Run extended to sample the final region."
+  },
+  {
+    "name": "35_mur_refraction",
+    "dimension": "2d",
+    "title": "Glass-air refraction with Mur boundaries",
+    "source_script": "experiments/supplemental/35_mur_refraction.py",
+    "original_directory": "results/35_mur_refraction",
+    "size_bytes": 31429991,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/35_mur_refraction/energy.png",
+      "previews/2d/35_mur_refraction/fields.png",
+      "previews/2d/35_mur_refraction/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/35_mur_refraction/config.json",
+      "metadata/2d/35_mur_refraction/diagnostics.json"
+    ],
+    "steps": 1600,
+    "grid": [
+      400,
+      240
+    ],
+    "thesis_reference": "Supplement: refraccionmur.m / Program31",
+    "notes": "First-order Mur replacement for the draft second-order ABC; no artificial magnetic bulk loss. Positive-index conventional dielectric."
+  },
+  {
+    "name": "36_diagonal_huygens_array",
+    "dimension": "2d",
+    "title": "Diagonal array of equal-phase point sources",
+    "source_script": "experiments/supplemental/36_diagonal_huygens_array.py",
+    "original_directory": "results/36_diagonal_huygens_array",
+    "size_bytes": 43369906,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/36_diagonal_huygens_array/energy.png",
+      "previews/2d/36_diagonal_huygens_array/fields.png",
+      "previews/2d/36_diagonal_huygens_array/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/36_diagonal_huygens_array/config.json",
+      "metadata/2d/36_diagonal_huygens_array/diagnostics.json"
+    ],
+    "steps": 1000,
+    "grid": [
+      400,
+      400
+    ],
+    "thesis_reference": "Supplement: refraccionlarry.m and nuevo/Untitled2.m",
+    "notes": "Source-only prototype: no refraction interface is active in refraccionlarry.m."
+  },
+  {
+    "name": "37_root_double_slit_700nm",
+    "dimension": "2d",
+    "title": "Double slit from the root FDTD2D.m",
+    "source_script": "experiments/supplemental/37_root_double_slit_700nm.py",
+    "original_directory": "results/37_root_double_slit_700nm",
+    "size_bytes": 49130075,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/37_root_double_slit_700nm/detector.png",
+      "previews/2d/37_root_double_slit_700nm/energy.png",
+      "previews/2d/37_root_double_slit_700nm/fields.png",
+      "previews/2d/37_root_double_slit_700nm/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/37_root_double_slit_700nm/config.json",
+      "metadata/2d/37_root_double_slit_700nm/diagnostics.json"
+    ],
+    "steps": 1600,
+    "grid": [
+      400,
+      400
+    ],
+    "thesis_reference": "Supplement: root FDTD2D.m",
+    "notes": "Rotated to +y propagation. Integer sampled legacy intervals correspond to two 2-cell openings and a 5-cell opaque gap despite Ancho=5/Separacion=5. PEC replaces the 5.7e8 S/m obstacle; tiny background loss omitted."
+  },
+  {
+    "name": "38_waveguide_bend",
+    "dimension": "2d",
+    "title": "Effective-index waveguide bend",
+    "source_script": "experiments/supplemental/38_waveguide_bend.py",
+    "original_directory": "results/38_waveguide_bend",
+    "size_bytes": 56202227,
+    "files": 7,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 3
+    },
+    "archive": "fdtd-results-2d.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip",
+    "previews": [
+      "previews/2d/38_waveguide_bend/energy.png",
+      "previews/2d/38_waveguide_bend/fields.png",
+      "previews/2d/38_waveguide_bend/materials_and_intensity.png"
+    ],
+    "metadata": [
+      "metadata/2d/38_waveguide_bend/config.json",
+      "metadata/2d/38_waveguide_bend/diagnostics.json"
+    ],
+    "steps": 4200,
+    "grid": [
+      430,
+      430
+    ],
+    "thesis_reference": "Supplement: unfinished 2D/FDTD_2D_3/Untitled8.m",
+    "notes": "Reconstruction of intended 20 um-radius, 0.775 um-width bend. Includes a scalar eigenmode solver to replace missing ezmode; no claim of exact agreement with the incomplete 3D effective-index prototype."
+  },
+  {
+    "name": "15_free_space_sine_3d",
+    "dimension": "3d",
+    "title": "3D free-space sinusoidal point source — full-vector 3D",
+    "source_script": "experiments_3d/15_free_space_sine_3d.py",
+    "original_directory": "results_3d/15_free_space_sine_3d",
+    "size_bytes": 55835028,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/15_free_space_sine_3d/diagnostics.png",
+      "previews/3d/15_free_space_sine_3d/fields.png",
+      "previews/3d/15_free_space_sine_3d/snapshots.png",
+      "previews/3d/15_free_space_sine_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/15_free_space_sine_3d/config.json",
+      "metadata/3d/15_free_space_sine_3d/diagnostics.json"
+    ],
+    "steps": 350,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "5.1.4; Fig. 5-6; printed p. 71",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. PEC cavity in all three dimensions; the source is a localized z-directed electric dipole."
+  },
+  {
+    "name": "16_free_space_modulated_3d",
+    "dimension": "3d",
+    "title": "3D modulated point pulse, reflecting edges — full-vector 3D",
+    "source_script": "experiments_3d/16_free_space_modulated_3d.py",
+    "original_directory": "results_3d/16_free_space_modulated_3d",
+    "size_bytes": 58367897,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/16_free_space_modulated_3d/diagnostics.png",
+      "previews/3d/16_free_space_modulated_3d/fields.png",
+      "previews/3d/16_free_space_modulated_3d/snapshots.png",
+      "previews/3d/16_free_space_modulated_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/16_free_space_modulated_3d/config.json",
+      "metadata/3d/16_free_space_modulated_3d/diagnostics.json"
+    ],
+    "steps": 350,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "5.1.4; Fig. 5-7; printed p. 72",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. PEC cavity in all three dimensions; the source is a localized z-directed electric dipole."
+  },
+  {
+    "name": "17_free_space_gaussian_3d",
+    "dimension": "3d",
+    "title": "3D Gaussian point pulse — full-vector 3D",
+    "source_script": "experiments_3d/17_free_space_gaussian_3d.py",
+    "original_directory": "results_3d/17_free_space_gaussian_3d",
+    "size_bytes": 59652296,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/17_free_space_gaussian_3d/diagnostics.png",
+      "previews/3d/17_free_space_gaussian_3d/fields.png",
+      "previews/3d/17_free_space_gaussian_3d/snapshots.png",
+      "previews/3d/17_free_space_gaussian_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/17_free_space_gaussian_3d/config.json",
+      "metadata/3d/17_free_space_gaussian_3d/diagnostics.json"
+    ],
+    "steps": 350,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "2D/FDTD_2D_1/FDTD_2D_libre.m",
+    "notes": " PEC cavity in all three dimensions; the source is a localized z-directed electric dipole."
+  },
+  {
+    "name": "18_periodic_xy_3d",
+    "dimension": "3d",
+    "title": "3D pulse with periodic x and y boundaries — full-vector 3D",
+    "source_script": "experiments_3d/18_periodic_xy_3d.py",
+    "original_directory": "results_3d/18_periodic_xy_3d",
+    "size_bytes": 40468033,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/18_periodic_xy_3d/diagnostics.png",
+      "previews/3d/18_periodic_xy_3d/fields.png",
+      "previews/3d/18_periodic_xy_3d/snapshots.png",
+      "previews/3d/18_periodic_xy_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/18_periodic_xy_3d/config.json",
+      "metadata/3d/18_periodic_xy_3d/diagnostics.json"
+    ],
+    "steps": 500,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "5.1.5; Fig. 5-8; printed p. 73",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. Periodic in all three dimensions; the source is a localized z-directed electric dipole."
+  },
+  {
+    "name": "19_pml_xy_3d",
+    "dimension": "3d",
+    "title": "3D pulse with PML on all four sides — full-vector 3D",
+    "source_script": "experiments_3d/19_pml_xy_3d.py",
+    "original_directory": "results_3d/19_pml_xy_3d",
+    "size_bytes": 61903430,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/19_pml_xy_3d/diagnostics.png",
+      "previews/3d/19_pml_xy_3d/fields.png",
+      "previews/3d/19_pml_xy_3d/snapshots.png",
+      "previews/3d/19_pml_xy_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/19_pml_xy_3d/config.json",
+      "metadata/3d/19_pml_xy_3d/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "5.1.6; Fig. 5-10; printed p. 79",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved."
+  },
+  {
+    "name": "20_pml_x_periodic_y_3d",
+    "dimension": "3d",
+    "title": "3D PML in x, periodic in y — full-vector 3D",
+    "source_script": "experiments_3d/20_pml_x_periodic_y_3d.py",
+    "original_directory": "results_3d/20_pml_x_periodic_y_3d",
+    "size_bytes": 52450016,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/20_pml_x_periodic_y_3d/diagnostics.png",
+      "previews/3d/20_pml_x_periodic_y_3d/fields.png",
+      "previews/3d/20_pml_x_periodic_y_3d/snapshots.png",
+      "previews/3d/20_pml_x_periodic_y_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/20_pml_x_periodic_y_3d/config.json",
+      "metadata/3d/20_pml_x_periodic_y_3d/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "5.1.6; Fig. 5-11; printed p. 80",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved."
+  },
+  {
+    "name": "21_periodic_x_pml_y_3d",
+    "dimension": "3d",
+    "title": "3D periodic in x, PML in y — full-vector 3D",
+    "source_script": "experiments_3d/21_periodic_x_pml_y_3d.py",
+    "original_directory": "results_3d/21_periodic_x_pml_y_3d",
+    "size_bytes": 61377247,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/21_periodic_x_pml_y_3d/diagnostics.png",
+      "previews/3d/21_periodic_x_pml_y_3d/fields.png",
+      "previews/3d/21_periodic_x_pml_y_3d/snapshots.png",
+      "previews/3d/21_periodic_x_pml_y_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/21_periodic_x_pml_y_3d/config.json",
+      "metadata/3d/21_periodic_x_pml_y_3d/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "5.1.6; Fig. 5-12; printed p. 80",
+    "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved."
+  },
+  {
+    "name": "22_huygens_plane_wave_3d",
+    "dimension": "3d",
+    "title": "3D plane wave from an aligned source array — full-vector 3D",
+    "source_script": "experiments_3d/22_huygens_plane_wave_3d.py",
+    "original_directory": "results_3d/22_huygens_plane_wave_3d",
+    "size_bytes": 1464340,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/22_huygens_plane_wave_3d/diagnostics.png",
+      "previews/3d/22_huygens_plane_wave_3d/fields.png",
+      "previews/3d/22_huygens_plane_wave_3d/snapshots.png",
+      "previews/3d/22_huygens_plane_wave_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/22_huygens_plane_wave_3d/config.json",
+      "metadata/3d/22_huygens_plane_wave_3d/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200,
+      8
+    ],
+    "thesis_reference": "5.2; Fig. 5-13; printed p. 81",
+    "notes": "Sources span x and propagate along y, so x is periodic and y is PML. The thesis caption swaps these axes. Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. Uniform x-z source sheet; periodic z with eight cells gives the depth-independent plane-wave calibration limit of the six-component solver."
+  },
+  {
+    "name": "23_tfsf_plane_wave_3d",
+    "dimension": "3d",
+    "title": "3D one-way plane wave using TF/SF — full-vector 3D",
+    "source_script": "experiments_3d/23_tfsf_plane_wave_3d.py",
+    "original_directory": "results_3d/23_tfsf_plane_wave_3d",
+    "size_bytes": 719870,
+    "files": 9,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 5
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/23_tfsf_plane_wave_3d/diagnostics.png",
+      "previews/3d/23_tfsf_plane_wave_3d/fields.png",
+      "previews/3d/23_tfsf_plane_wave_3d/snapshots.png",
+      "previews/3d/23_tfsf_plane_wave_3d/spectra.png",
+      "previews/3d/23_tfsf_plane_wave_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/23_tfsf_plane_wave_3d/config.json",
+      "metadata/3d/23_tfsf_plane_wave_3d/diagnostics.json"
+    ],
+    "steps": 700,
+    "grid": [
+      200,
+      200,
+      8
+    ],
+    "thesis_reference": "2D/FDTD_2D_2 TF/SF draft and Untitled7.m",
+    "notes": " Uniform x-z source sheet; periodic z with eight cells gives the depth-independent plane-wave calibration limit of the six-component solver."
+  },
+  {
+    "name": "24_plane_wave_lossy_material_3d",
+    "dimension": "3d",
+    "title": "3D plane wave entering a lossy dielectric — full-vector 3D",
+    "source_script": "experiments_3d/24_plane_wave_lossy_material_3d.py",
+    "original_directory": "results_3d/24_plane_wave_lossy_material_3d",
+    "size_bytes": 1462876,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/24_plane_wave_lossy_material_3d/diagnostics.png",
+      "previews/3d/24_plane_wave_lossy_material_3d/fields.png",
+      "previews/3d/24_plane_wave_lossy_material_3d/snapshots.png",
+      "previews/3d/24_plane_wave_lossy_material_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/24_plane_wave_lossy_material_3d/config.json",
+      "metadata/3d/24_plane_wave_lossy_material_3d/diagnostics.json"
+    ],
+    "steps": 1800,
+    "grid": [
+      200,
+      400,
+      8
+    ],
+    "thesis_reference": "2D/FDTD_2D_2 material_onda_plana.m",
+    "notes": " Uniform x-z source sheet; periodic z with eight cells gives the depth-independent plane-wave calibration limit of the six-component solver."
+  },
+  {
+    "name": "25_single_slit_L25_3d",
+    "dimension": "3d",
+    "title": "Single slit b=10, detector distance=25 cells — full-vector 3D",
+    "source_script": "experiments_3d/25_single_slit_L25_3d.py",
+    "original_directory": "results_3d/25_single_slit_L25_3d",
+    "size_bytes": 64541606,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/25_single_slit_L25_3d/diagnostics.png",
+      "previews/3d/25_single_slit_L25_3d/fields.png",
+      "previews/3d/25_single_slit_L25_3d/snapshots.png",
+      "previews/3d/25_single_slit_L25_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/25_single_slit_L25_3d/config.json",
+      "metadata/3d/25_single_slit_L25_3d/diagnostics.json"
+    ],
+    "steps": 900,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "6.1; Figs. 6-2 to 6-4; printed pp. 84-86",
+    "notes": "10 cells per vacuum wavelength; exact PEC obstacle; detector distance measured from the exit face. Periodic x represents repeated apertures and can affect late-time patterns. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+  },
+  {
+    "name": "26_single_slit_L30_3d",
+    "dimension": "3d",
+    "title": "Single slit b=10, detector distance=30 cells — full-vector 3D",
+    "source_script": "experiments_3d/26_single_slit_L30_3d.py",
+    "original_directory": "results_3d/26_single_slit_L30_3d",
+    "size_bytes": 64540826,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/26_single_slit_L30_3d/diagnostics.png",
+      "previews/3d/26_single_slit_L30_3d/fields.png",
+      "previews/3d/26_single_slit_L30_3d/snapshots.png",
+      "previews/3d/26_single_slit_L30_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/26_single_slit_L30_3d/config.json",
+      "metadata/3d/26_single_slit_L30_3d/diagnostics.json"
+    ],
+    "steps": 900,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "6.1; Figs. 6-2 to 6-4; printed pp. 84-86",
+    "notes": "10 cells per vacuum wavelength; exact PEC obstacle; detector distance measured from the exit face. Periodic x represents repeated apertures and can affect late-time patterns. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+  },
+  {
+    "name": "27_single_slit_far_field_3d",
+    "dimension": "3d",
+    "title": "Single slit with extended observation region — full-vector 3D",
+    "source_script": "experiments_3d/27_single_slit_far_field_3d.py",
+    "original_directory": "results_3d/27_single_slit_far_field_3d",
+    "size_bytes": 302698078,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/27_single_slit_far_field_3d/diagnostics.png",
+      "previews/3d/27_single_slit_far_field_3d/fields.png",
+      "previews/3d/27_single_slit_far_field_3d/snapshots.png",
+      "previews/3d/27_single_slit_far_field_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/27_single_slit_far_field_3d/config.json",
+      "metadata/3d/27_single_slit_far_field_3d/diagnostics.json"
+    ],
+    "steps": 1700,
+    "grid": [
+      400,
+      500,
+      64
+    ],
+    "thesis_reference": "6.1; Figs. 6-5 to 6-7; printed pp. 87-88",
+    "notes": "Extended domain with all-side PML to suppress replicas. Chosen L=300 cells gives full-aperture Fresnel number 0.033; exact L is not specified for Fig. 6-7. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+  },
+  {
+    "name": "28_double_slit_L5_3d",
+    "dimension": "3d",
+    "title": "Double slit b=10, gap=10, detector distance=5 — full-vector 3D",
+    "source_script": "experiments_3d/28_double_slit_L5_3d.py",
+    "original_directory": "results_3d/28_double_slit_L5_3d",
+    "size_bytes": 65365867,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-01.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip",
+    "previews": [
+      "previews/3d/28_double_slit_L5_3d/diagnostics.png",
+      "previews/3d/28_double_slit_L5_3d/fields.png",
+      "previews/3d/28_double_slit_L5_3d/snapshots.png",
+      "previews/3d/28_double_slit_L5_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/28_double_slit_L5_3d/config.json",
+      "metadata/3d/28_double_slit_L5_3d/diagnostics.json"
+    ],
+    "steps": 900,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "6.1; Figs. 6-10 and 6-11 captions; printed pp. 90-91",
+    "notes": "Uses caption dimensions. L=15 is not Fraunhofer for the full 30-cell aperture; report full-aperture Fresnel number. Periodic x represents an aperture array. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+  },
+  {
+    "name": "29_double_slit_L15_3d",
+    "dimension": "3d",
+    "title": "Double slit b=10, gap=10, detector distance=15 — full-vector 3D",
+    "source_script": "experiments_3d/29_double_slit_L15_3d.py",
+    "original_directory": "results_3d/29_double_slit_L15_3d",
+    "size_bytes": 65385856,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-02.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-02.zip",
+    "previews": [
+      "previews/3d/29_double_slit_L15_3d/diagnostics.png",
+      "previews/3d/29_double_slit_L15_3d/fields.png",
+      "previews/3d/29_double_slit_L15_3d/snapshots.png",
+      "previews/3d/29_double_slit_L15_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/29_double_slit_L15_3d/config.json",
+      "metadata/3d/29_double_slit_L15_3d/diagnostics.json"
+    ],
+    "steps": 900,
+    "grid": [
+      200,
+      200,
+      64
+    ],
+    "thesis_reference": "6.1; Figs. 6-10 and 6-11 captions; printed pp. 90-91",
+    "notes": "Uses caption dimensions. L=15 is not Fraunhofer for the full 30-cell aperture; report full-aperture Fresnel number. Periodic x represents an aperture array. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+  },
+  {
+    "name": "30_double_slit_b5_L100_3d",
+    "dimension": "3d",
+    "title": "Double slit b=5 with a distant detector — full-vector 3D",
+    "source_script": "experiments_3d/30_double_slit_b5_L100_3d.py",
+    "original_directory": "results_3d/30_double_slit_b5_L100_3d",
+    "size_bytes": 139259036,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-02.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-02.zip",
+    "previews": [
+      "previews/3d/30_double_slit_b5_L100_3d/diagnostics.png",
+      "previews/3d/30_double_slit_b5_L100_3d/fields.png",
+      "previews/3d/30_double_slit_b5_L100_3d/snapshots.png",
+      "previews/3d/30_double_slit_b5_L100_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/30_double_slit_b5_L100_3d/config.json",
+      "metadata/3d/30_double_slit_b5_L100_3d/diagnostics.json"
+    ],
+    "steps": 1200,
+    "grid": [
+      300,
+      300,
+      64
+    ],
+    "thesis_reference": "6.1; prose following Fig. 6-9; printed pp. 89-90",
+    "notes": "Preserves the separate prose case b=5 and L=100; captions specify a different b=10 case. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+  },
+  {
+    "name": "31_refraction_two_media_3d",
+    "dimension": "3d",
+    "title": "Refraction from n=1.5 to n=2.1 — full-vector 3D",
+    "source_script": "experiments_3d/31_refraction_two_media_3d.py",
+    "original_directory": "results_3d/31_refraction_two_media_3d",
+    "size_bytes": 119212358,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-02.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-02.zip",
+    "previews": [
+      "previews/3d/31_refraction_two_media_3d/diagnostics.png",
+      "previews/3d/31_refraction_two_media_3d/fields.png",
+      "previews/3d/31_refraction_two_media_3d/snapshots.png",
+      "previews/3d/31_refraction_two_media_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/31_refraction_two_media_3d/config.json",
+      "metadata/3d/31_refraction_two_media_3d/diagnostics.json"
+    ],
+    "steps": 1800,
+    "grid": [
+      250,
+      300,
+      64
+    ],
+    "thesis_reference": "6.2; Fig. 6-14; printed p. 94",
+    "notes": "532 nm from thesis; 25 vacuum cells/wavelength. Finite phased beam replaces the under-resolved draft source. Angles are measured from +y; epsilon_r=n^2. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Gaussian beam in both transverse dimensions; x phase delay preserves the original incidence angle."
+  },
+  {
+    "name": "32_high_index_reflection_3d",
+    "dimension": "3d",
+    "title": "Reflection and transmission from n=1.5 to n=4 — full-vector 3D",
+    "source_script": "experiments_3d/32_high_index_reflection_3d.py",
+    "original_directory": "results_3d/32_high_index_reflection_3d",
+    "size_bytes": 117844206,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-02.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-02.zip",
+    "previews": [
+      "previews/3d/32_high_index_reflection_3d/diagnostics.png",
+      "previews/3d/32_high_index_reflection_3d/fields.png",
+      "previews/3d/32_high_index_reflection_3d/snapshots.png",
+      "previews/3d/32_high_index_reflection_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/32_high_index_reflection_3d/config.json",
+      "metadata/3d/32_high_index_reflection_3d/diagnostics.json"
+    ],
+    "steps": 1800,
+    "grid": [
+      250,
+      300,
+      64
+    ],
+    "thesis_reference": "6.2; Fig. 6-15; printed p. 95",
+    "notes": "The specified n=1.5 to n=4 interface only partially reflects. It cannot produce total internal reflection. A separate PEC example supplies the ideal specular mirror. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Gaussian beam in both transverse dimensions; x phase delay preserves the original incidence angle."
+  },
+  {
+    "name": "33_specular_pec_mirror_3d",
+    "dimension": "3d",
+    "title": "Specular reflection from an ideal PEC mirror — full-vector 3D",
+    "source_script": "experiments_3d/33_specular_pec_mirror_3d.py",
+    "original_directory": "results_3d/33_specular_pec_mirror_3d",
+    "size_bytes": 61474585,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-02.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-02.zip",
+    "previews": [
+      "previews/3d/33_specular_pec_mirror_3d/diagnostics.png",
+      "previews/3d/33_specular_pec_mirror_3d/fields.png",
+      "previews/3d/33_specular_pec_mirror_3d/snapshots.png",
+      "previews/3d/33_specular_pec_mirror_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/33_specular_pec_mirror_3d/config.json",
+      "metadata/3d/33_specular_pec_mirror_3d/diagnostics.json"
+    ],
+    "steps": 1800,
+    "grid": [
+      250,
+      300,
+      64
+    ],
+    "thesis_reference": "6.2; intended ideal reflector in Fig. 6-15",
+    "notes": "Ideal PEC produces full reflection. This is a correction of the intended ideal-mirror experiment, not a claim that n=4 is a perfect conductor. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Gaussian beam in both transverse dimensions; x phase delay preserves the original incidence angle."
+  },
+  {
+    "name": "34_refraction_three_media_3d",
+    "dimension": "3d",
+    "title": "Refraction through n=1.5 / 2.5 / 1.5 — full-vector 3D",
+    "source_script": "experiments_3d/34_refraction_three_media_3d.py",
+    "original_directory": "results_3d/34_refraction_three_media_3d",
+    "size_bytes": 120159852,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-02.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-02.zip",
+    "previews": [
+      "previews/3d/34_refraction_three_media_3d/diagnostics.png",
+      "previews/3d/34_refraction_three_media_3d/fields.png",
+      "previews/3d/34_refraction_three_media_3d/snapshots.png",
+      "previews/3d/34_refraction_three_media_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/34_refraction_three_media_3d/config.json",
+      "metadata/3d/34_refraction_three_media_3d/diagnostics.json"
+    ],
+    "steps": 2200,
+    "grid": [
+      250,
+      300,
+      64
+    ],
+    "thesis_reference": "6.2; Fig. 6-16; printed p. 96",
+    "notes": "Three dielectric regions with parallel interfaces; first and last index are equal. Run extended to sample the final region. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Gaussian beam in both transverse dimensions; x phase delay preserves the original incidence angle."
+  },
+  {
+    "name": "35_mur_refraction_3d",
+    "dimension": "3d",
+    "title": "Glass-air refraction with Mur boundaries — full-vector 3D",
+    "source_script": "experiments_3d/35_mur_refraction_3d.py",
+    "original_directory": "results_3d/35_mur_refraction_3d",
+    "size_bytes": 154332457,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-02.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-02.zip",
+    "previews": [
+      "previews/3d/35_mur_refraction_3d/diagnostics.png",
+      "previews/3d/35_mur_refraction_3d/fields.png",
+      "previews/3d/35_mur_refraction_3d/snapshots.png",
+      "previews/3d/35_mur_refraction_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/35_mur_refraction_3d/config.json",
+      "metadata/3d/35_mur_refraction_3d/diagnostics.json"
+    ],
+    "steps": 1600,
+    "grid": [
+      400,
+      240,
+      64
+    ],
+    "thesis_reference": "Supplement: refraccionmur.m / Program31",
+    "notes": "First-order Mur replacement for the draft second-order ABC; no artificial magnetic bulk loss. Positive-index conventional dielectric. First-order Mur on all six faces; finite Gaussian beam in x-z. Depth is 64 cells."
+  },
+  {
+    "name": "36_diagonal_huygens_array_3d",
+    "dimension": "3d",
+    "title": "Diagonal array of equal-phase point sources — full-vector 3D",
+    "source_script": "experiments_3d/36_diagonal_huygens_array_3d.py",
+    "original_directory": "results_3d/36_diagonal_huygens_array_3d",
+    "size_bytes": 240324148,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-03.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-03.zip",
+    "previews": [
+      "previews/3d/36_diagonal_huygens_array_3d/diagnostics.png",
+      "previews/3d/36_diagonal_huygens_array_3d/fields.png",
+      "previews/3d/36_diagonal_huygens_array_3d/snapshots.png",
+      "previews/3d/36_diagonal_huygens_array_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/36_diagonal_huygens_array_3d/config.json",
+      "metadata/3d/36_diagonal_huygens_array_3d/diagnostics.json"
+    ],
+    "steps": 1000,
+    "grid": [
+      400,
+      400,
+      64
+    ],
+    "thesis_reference": "Supplement: refraccionlarry.m and nuevo/Untitled2.m",
+    "notes": "Source-only prototype: no refraction interface is active in refraccionlarry.m. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Twenty equal-phase z-directed dipoles along the original diagonal at the center z plane."
+  },
+  {
+    "name": "37_root_double_slit_700nm_3d",
+    "dimension": "3d",
+    "title": "Double slit from the root FDTD3D.m — full-vector 3D",
+    "source_script": "experiments_3d/37_root_double_slit_700nm_3d.py",
+    "original_directory": "results_3d/37_root_double_slit_700nm_3d",
+    "size_bytes": 246647988,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-03.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-03.zip",
+    "previews": [
+      "previews/3d/37_root_double_slit_700nm_3d/diagnostics.png",
+      "previews/3d/37_root_double_slit_700nm_3d/fields.png",
+      "previews/3d/37_root_double_slit_700nm_3d/snapshots.png",
+      "previews/3d/37_root_double_slit_700nm_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/37_root_double_slit_700nm_3d/config.json",
+      "metadata/3d/37_root_double_slit_700nm_3d/diagnostics.json"
+    ],
+    "steps": 1600,
+    "grid": [
+      400,
+      400,
+      64
+    ],
+    "thesis_reference": "Supplement: root FDTD2D.m",
+    "notes": "Rotated to +y propagation. Integer sampled legacy intervals correspond to two 2-cell openings and a 5-cell opaque gap despite Ancho=5/Separacion=5. PEC replaces the 5.7e8 S/m obstacle; tiny background loss omitted. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+  },
+  {
+    "name": "38_waveguide_bend_3d",
+    "dimension": "3d",
+    "title": "Rectangular-core waveguide bend — full-vector 3D",
+    "source_script": "experiments_3d/38_waveguide_bend_3d.py",
+    "original_directory": "results_3d/38_waveguide_bend_3d",
+    "size_bytes": 266993774,
+    "files": 8,
+    "output_types": {
+      ".gif": 1,
+      ".json": 2,
+      ".npz": 1,
+      ".png": 4
+    },
+    "archive": "fdtd-results-3d-part-03.zip",
+    "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-03.zip",
+    "previews": [
+      "previews/3d/38_waveguide_bend_3d/diagnostics.png",
+      "previews/3d/38_waveguide_bend_3d/fields.png",
+      "previews/3d/38_waveguide_bend_3d/snapshots.png",
+      "previews/3d/38_waveguide_bend_3d/volume_sections.png"
+    ],
+    "metadata": [
+      "metadata/3d/38_waveguide_bend_3d/config.json",
+      "metadata/3d/38_waveguide_bend_3d/diagnostics.json"
+    ],
+    "steps": 4200,
+    "grid": [
+      430,
+      430,
+      64
+    ],
+    "thesis_reference": "Supplement: unfinished 2D/FDTD_2D_3/Untitled8.m",
+    "notes": "Reconstruction of intended 20 um-radius, 0.775 um-width bend. Includes a scalar eigenmode solver to replace missing ezmode; no claim of exact agreement with the incomplete 3D effective-index prototype. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Full rectangular dielectric core (n=1.9), height=0.775 μm, air above and n=1.52 substrate below. Scalar transverse eigenfunction seeds Ez; this is not a calibrated vector port mode."
+  }
+]

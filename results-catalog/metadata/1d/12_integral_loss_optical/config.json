@@ -1,0 +1,33 @@
+{
+  "name": "12_integral_loss_optical",
+  "title": "1D integral-current loss at optical SI scales",
+  "thesis": "4.1.10; optical interpretation of Figs. 4-19 and 4-20",
+  "cells": 400,
+  "steps": 3000,
+  "wavelength": 5e-07,
+  "points_per_wavelength": 10.0,
+  "dx": null,
+  "courant": 0.5,
+  "boundary": "delay",
+  "source": "gaussian",
+  "injection": "tfsf",
+  "source_cell": 19,
+  "tau_periods": 0.5,
+  "layers": [
+    {
+      "start": 149,
+      "stop": 300,
+      "epsilon_r": 1.5,
+      "sigma": 0.01
+    }
+  ],
+  "loss_model": "integral",
+  "spectra": true,
+  "snapshots": [
+    250,
+    350,
+    550,
+    1300
+  ],
+  "notes": "Same SI conductivity as Fig. 4-19, with a consistently optical time grid; not a Debye, Drude or Lorentz dispersive model."
+}

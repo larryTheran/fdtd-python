@@ -1,0 +1,14 @@
+{
+  "final_peak_field": 0.9629301255902201,
+  "final_energy_proxy": 1.714741465139703e-11,
+  "peak_energy_proxy": 1.7180575268558453e-11,
+  "remaining_energy_fraction": 0.9980698773677207,
+  "dt_seconds": 1.167474333193532e-16,
+  "dx_meters": 6.999999999999999e-08,
+  "steps": 1000,
+  "dy_meters": 6.999999999999999e-08,
+  "average_steps": 160,
+  "simulation_seconds": 0.9539747909875587,
+  "numpy_version": "2.5.3",
+  "notes": "Source-only prototype: no refraction interface is active in refraccionlarry.m."
+}

@@ -1,0 +1,16 @@
+{
+  "final_peak_field": 1.1156145304930892e-06,
+  "final_energy_proxy": 1.181185237964501e-18,
+  "peak_energy_proxy": 3.133886229857446e-07,
+  "remaining_energy_fraction": 3.7690750439853415e-12,
+  "dt_seconds": 6.808848581238542e-17,
+  "dx_meters": 4.08248290463863e-08,
+  "steps": 3000,
+  "valid_frequency_bins": 668,
+  "max_abs_spectral_residual": 0.0030912435129945015,
+  "median_reflectance": 0.022125547480853776,
+  "median_transmittance": 0.9780182381386417,
+  "simulation_seconds": 0.06585483299568295,
+  "numpy_version": "2.5.3",
+  "notes": "Same SI conductivity as Fig. 4-19, with a consistently optical time grid; not a Debye, Drude or Lorentz dispersive model."
+}

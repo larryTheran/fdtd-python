@@ -1,0 +1,27 @@
+{
+  "name": "01_free_space",
+  "title": "1D free-space pulse with zero exterior ghosts",
+  "thesis": "4.1.4; Fig. 4-5; printed p. 42",
+  "cells": 200,
+  "steps": 300,
+  "wavelength": 5.32e-07,
+  "points_per_wavelength": 10.0,
+  "dx": 5.3200000000000007e-08,
+  "courant": 0.5,
+  "boundary": "zero",
+  "source": "gaussian",
+  "injection": "soft",
+  "source_cell": 99,
+  "tau_periods": 0.5,
+  "layers": [],
+  "loss_model": "ohmic",
+  "spectra": false,
+  "snapshots": [
+    100,
+    150,
+    200,
+    250,
+    300
+  ],
+  "notes": "Corrected last-cell index from sin_nada_modi. Zero ghosts reflect; they are not an absorbing boundary. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+}

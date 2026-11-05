@@ -1,0 +1,16 @@
+{
+  "final_peak_field": 1.0646918671097598e-08,
+  "final_energy_proxy": 2.034816464572522e-17,
+  "peak_energy_proxy": 0.07655755109459982,
+  "remaining_energy_fraction": 2.657891266738877e-16,
+  "dt_seconds": 1.6678204759907604e-11,
+  "dx_meters": 0.01,
+  "steps": 3000,
+  "valid_frequency_bins": 668,
+  "max_abs_spectral_residual": 0.8502796146349105,
+  "median_reflectance": 0.012176722223941578,
+  "median_transmittance": 0.15011757887134694,
+  "simulation_seconds": 0.0673792080488056,
+  "numpy_version": "2.5.3",
+  "notes": "D/E/I conductive model with corrected positive denominator. Consistent cm-grid reinterpretation; original optical labels conflicted with the actual time step. No fitted 70% or 90% loss target."
+}

@@ -1,0 +1,412 @@
+{
+  "summary": {
+    "original_files": 1470,
+    "file_types": {
+      "(none)": 3,
+      ".m": 49,
+      ".db": 25,
+      ".eps": 318,
+      ".asv": 1,
+      ".avi": 1,
+      ".p": 6,
+      ".bin": 8,
+      ".txt": 4,
+      ".svg": 54,
+      ".png": 303,
+      ".pdf": 255,
+      ".aux": 75,
+      ".tex": 164,
+      ".sty": 36,
+      ".bib": 4,
+      ".log": 56,
+      ".bbl": 14,
+      ".blg": 14,
+      ".out": 11,
+      ".ptc": 8,
+      ".toc": 11,
+      ".fig": 4,
+      ".lof": 4,
+      ".lot": 4,
+      ".synctex": 2,
+      ".gif": 4,
+      ".gz": 5,
+      ".bst": 12,
+      ".zip": 4,
+      ".jpg": 2,
+      ".md": 1,
+      ".nav": 3,
+      ".snm": 3,
+      ".tmp": 1,
+      ".cls": 1
+    },
+    "matlab_files": 49,
+    "unique_matlab_contents": 42,
+    "archives": [
+      {
+        "path": "Correcciones 2 con nuevas cosas/Tesis correcciones cristian/tcolorbox.zip",
+        "member_count": 46,
+        "source_members": []
+      },
+      {
+        "path": "Correcciones 2 con nuevas cosas/Tesis correcciones cristian+cardona/tcolorbox.zip",
+        "member_count": 46,
+        "source_members": []
+      },
+      {
+        "path": "Correcciones 2 con nuevas cosas/Tesis1/tcolorbox.zip",
+        "member_count": 46,
+        "source_members": []
+      },
+      {
+        "path": "Correcciones 2 con nuevas cosas/presentacion/titre-version-courte/tcolorbox.zip",
+        "member_count": 46,
+        "source_members": []
+      }
+    ]
+  },
+  "matlab": [
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_1/FDTD_1D_sin_nada.m",
+      "sha256": "ae3a2d850b4c8fede7be225d7773d1cbf190e2e05c64ec118e206eea62e9bbe9",
+      "duplicate_of": "",
+      "experiment_ids": "01",
+      "review": "Last H index corrected using the _modi version."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_1/FDTD_1D_sin_nada_modi.m",
+      "sha256": "e5857fcd9078d5dcbeea097c85d0209ed0380c102cef68e899a1e9edfa9f4cc1",
+      "duplicate_of": "",
+      "experiment_ids": "01",
+      "review": "Zero-exterior update used; thesis optical settings take precedence."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_2/FDTD_1D_Frontera_Perfecta.m",
+      "sha256": "28cc144779835d73feec95da55f31cc08cd79d464960528c525c68fe1db3b3c7",
+      "duplicate_of": "",
+      "experiment_ids": "02,14",
+      "review": "Two-step delay ABC retained; true PEC supplied separately."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_3/FDTD_1D_TS_FS.m",
+      "sha256": "30df262de537cfdc28e3ac1277ffea76ce45701a3d8489fba3285696cc96bef8",
+      "duplicate_of": "",
+      "experiment_ids": "03,04",
+      "review": "Active MATLAB code uses periodic ghosts; both open and periodic cases supplied."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_3_1/FDTD_1D_TF.m",
+      "sha256": "8fe3ca49c6325839ac9c4909b06b99eb0448c2535d483f8be7f24538d17862e2",
+      "duplicate_of": "",
+      "experiment_ids": "05",
+      "review": "Reference-normalized spectra replace division by the bare source at noisy frequencies."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_4/FDTD_1D_Dielectrico_sin_perdidas.m",
+      "sha256": "5995b3b588829992c82b60814de6aadfae1e055663e8f3a9688511a42aac8323",
+      "duplicate_of": "",
+      "experiment_ids": "06",
+      "review": "Two-layer reflection/transmission and material-speed diagrams."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_4/FDTD_1D_Dielectrico_sin_perdidas_2.m",
+      "sha256": "c01b0f20bc2928c6b3a93df9a00b51db9e3605de97a990d26b44e16337b9a5b5",
+      "duplicate_of": "",
+      "experiment_ids": "06",
+      "review": "Snapshot variant; same physical geometry."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_5/FDTD_1D_Dielectrico_sin_perdidas_vectorial.m",
+      "sha256": "4d2489cd5ecf2f2b87658b77d61febe22113d0463a7f3b4d1a85635ac7b2a713",
+      "duplicate_of": "",
+      "experiment_ids": "07",
+      "review": "Interactive layer inputs replaced by an editable Layer list."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_6/FDTD_1D_Dielectrico_con_perdidas.m",
+      "sha256": "708944e8ab64fd665d5a4d96bfc47568bc6672ffd4358bb370b93301be935109",
+      "duplicate_of": "",
+      "experiment_ids": "10,11,12",
+      "review": "Integral-current formulation; cm/optical units separated."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_6/FDTD_1D_Dielectrico_con_perdidas1.m",
+      "sha256": "42f7768af5322dfe6de1281f63b1e64c08451ce018544c34afa64838e59022e7",
+      "duplicate_of": "",
+      "experiment_ids": "08,09",
+      "review": "Centered Ohmic update; unrelated highly conductive endpoint removed."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_6/FDTD_1D_Dielectrico_con_perdidas_densidad_de_corriente.m",
+      "sha256": "c962146edab6e63a2bfed951317eb5bdcbfe466efdfc64613b93e8ccefd1a4fb",
+      "duplicate_of": "",
+      "experiment_ids": "08,09",
+      "review": "Prototype resizes the grid to 200; canonical thesis slab is 400 cells."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_6/FDTD_1D_Dielectrico_con_perdidas_densidad_de_corriente1.m",
+      "sha256": "f95cabb57f144a3fd45b95972cb6ead8ded85fe131c87c0794a912db4ef6ed6a",
+      "duplicate_of": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_6/FDTD_1D_Dielectrico_con_perdidas_densidad_de_corriente1.asv",
+      "experiment_ids": "08,09",
+      "review": "Undefined f0, freq_in and KE; corrected source/time-grid implementation replaces this draft."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_6/FDTD_1D_Dielectrico_con_perdidas_densidad_de_corriente2.m",
+      "sha256": "021d8fb5c32975b93b320e6aa4acdeb3c8f2ca2368f77c01ff777660b8457e1b",
+      "duplicate_of": "",
+      "experiment_ids": "09",
+      "review": "Fig. 4-18 snapshot source; fixes cm override and stale source coefficient/index."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_7/FDTD_1D_Dielectrico_con_perdidas_densidad.m",
+      "sha256": "0f803df88f4de934abe4a4d0fc4c1eaa4b9047bd0d1525215def82e0b561e3b4",
+      "duplicate_of": "",
+      "experiment_ids": "08,10,11,12",
+      "review": "Broken matrix division/scalar coefficients and inconsistent 1/epsilon0 normalization; covered by validated lossy solvers."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/1D/FDTD_1D_8/FDTD_1D_Dielectrico_periodico.m",
+      "sha256": "b216d74d207f27a165ed261518087dfad81cf905cb784ec7061b72b9bb25afab",
+      "duplicate_of": "",
+      "experiment_ids": "13",
+      "review": "Alternating epsilon=5/2 slabs at 5 GHz; source length bug and insufficient duration corrected."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_1/FDTD_2D_libre.m",
+      "sha256": "83911542ac210a16461415b6f055eb99a5a87bc272cb193629153d3c36105243",
+      "duplicate_of": "",
+      "experiment_ids": "15,16,17,18",
+      "review": "Several incompatible point/line and boundary variants; separated into explicit experiments."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_2/FDTD_2D_PML.m",
+      "sha256": "2e86be701f3d4fb0889a924a811409c1c1d7fb94345118f2f1e0c1c7bb47cfdf",
+      "duplicate_of": "",
+      "experiment_ids": "19",
+      "review": "Asymmetric fi3=(1-xn)/(1-xn), stale indices and missing cross terms replaced by split-field PML."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_2/FDTD_2D_PML_TF_SF.m",
+      "sha256": "8de72e39be3e4554248f227115fed5f9dcf7816ebe1d993f129e5ddcb6091934",
+      "duplicate_of": "",
+      "experiment_ids": "23",
+      "review": "Correct staggered electric/magnetic plane-source injection."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_2/FDTD_2D_PML_solo_en_X.m",
+      "sha256": "d71893043a43096260e3e909f084ead2b79273f46d2ca464e1b61781709ebf16",
+      "duplicate_of": "",
+      "experiment_ids": "20,21",
+      "review": "Filename and active damping axes disagree; axes are explicit in Python."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_2/FDTD_2D_PML_solo_en_X_frontera_periodica_en_Y.m",
+      "sha256": "9d3566f27b4038c51347b3a7c0e8419ec5b6db3805ee5051827df24a894e0396",
+      "duplicate_of": "",
+      "experiment_ids": "20,21,24",
+      "review": "Contains dielectric loss and undefined Ez_src; boundary and material cases separated."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_2/FDTD_2D_PML_solo_en_X_material_onda_plana.m",
+      "sha256": "18f5d20f4d95a7d455c2f27f352abcdab427daaae9606b84a728141f016e4ac0",
+      "duplicate_of": "",
+      "experiment_ids": "22,24",
+      "review": "Plane source with lossy half-space; physical sigma retained at 50 GHz in 24."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_3/Untitled7.m",
+      "sha256": "48dec1911a507dc612d22a56fd1b802355e4a7908ee56c68d2ae93f216f7211d",
+      "duplicate_of": "",
+      "experiment_ids": "23",
+      "review": "Normal-incidence TF/SF/DFT prototype; declared er2 slab is never inserted."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_3/Untitled7modi.m",
+      "sha256": "56bb2949fc72d4b8ba8b6b3aa4ce24c8680a99c5b88ac201a232467425d529d1",
+      "duplicate_of": "",
+      "experiment_ids": "23",
+      "review": "Incomplete coefficients, undefined source/steps/draw2d; runnable plane-wave reconstruction."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_3/Untitled8.m",
+      "sha256": "8465d289e2b44e4748fe389b8e62a565f19de69a80b60b0b28994368932ac822",
+      "duplicate_of": "",
+      "experiment_ids": "38",
+      "review": "Incomplete effective-index bend: missing ezmode, coordinates and ramp. Reconstructed as a clearly labeled supplement."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_4/FDTD_2D_1_2_Rendijas.m",
+      "sha256": "2a074aabe276d1d9a05d97b4254c90228cb214f38733555724c29444f1e9c5de",
+      "duplicate_of": "",
+      "experiment_ids": "25,26,27,28,29,30",
+      "review": "Single/double slit branches; explicit aperture widths, PEC, detector averaging and far-field guide."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_4/FDTD_2D_1_2_Rendijas_modi.m",
+      "sha256": "fb1d87b64aabf273c9dd0a141cf5b44e05931a63a440f2898b8c3b311cbf06c0",
+      "duplicate_of": "",
+      "experiment_ids": "25,26,27,28,29,30",
+      "review": "Plot/parameter variants include 532/700 nm and ambiguous slit half-width; thesis figure cases kept separately."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_5/FDTD_2D_refraccion.m",
+      "sha256": "f06e32b34b12b5ad68cd1ab61dd1cf45f3417ab6da58685300e5095624218086",
+      "duplicate_of": "",
+      "experiment_ids": "31,32,34",
+      "review": "Draft assigns ER linearly and never uses it in ga; interfaces reconstructed from thesis chapter 6."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/Nuevos/Espacio Libre/FDTD_2D_Libre.m",
+      "sha256": "fe2c6e7bd3cd752d879a092d7f8e07d26108336c9ba448385874598d94045d06",
+      "duplicate_of": "",
+      "experiment_ids": "18",
+      "review": "Periodic prototype with corner/index errors."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/Nuevos/Espacio Libre/FDTD_2D_Libre2.m",
+      "sha256": "6cd315d4bf82829a05a62378bf9cfb15ce6b6178577ae901c4b9a804cc4ce68d",
+      "duplicate_of": "",
+      "experiment_ids": "19,20,21,23",
+      "review": "PML/DFT prototype with undefined Sx and mode-array size mismatch."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/nuevo/Untitled2.m",
+      "sha256": "51341579a05a84f580f68c3904a5d034c98dd8146351c03003d1f58dba506b94",
+      "duplicate_of": "",
+      "experiment_ids": "19,36",
+      "review": "PML/three-point diagonal source experiment; explicit array source geometry supplied."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/refraccion/refraccionmodi.m",
+      "sha256": "0b7e64e8cb69758c99bbfd98a4d29a2d160aca3c6a9af2c58ff4df9129b60ce2",
+      "duplicate_of": "",
+      "experiment_ids": "31,35",
+      "review": "ABC/PML hybrid draft; clean PML and first-order Mur variants supplied."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/refraccion/refraccionmur.m",
+      "sha256": "b239a0be392042987b9fb007f361c86445077692910ba3fa1e4cf38d2aa6ee13",
+      "duplicate_of": "",
+      "experiment_ids": "35",
+      "review": "Mur prototype; documented first-order replacement and consistent source frequency."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/refraccion/refraccionpml.m",
+      "sha256": "4ce5be4812937368ac28fa4a0ee510e1b3bfdd7e45de53e2abde96dee4b88465",
+      "duplicate_of": "",
+      "experiment_ids": "34",
+      "review": "Outer folder has 1.5/2.5/1.5. Nested draft has index1=0 and divides by zero; thesis values take precedence."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/refraccion/refraccionpml1.m",
+      "sha256": "cece4b880f774a651b76a46ed830794cab5f9601edec822f78e0137d89753b77",
+      "duplicate_of": "",
+      "experiment_ids": "31,32,33",
+      "review": "Nested draft n2=2, outer n2=4; thesis n2=2.1 plus stated n2=4 and true PEC cases supplied."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/FDTD_2D_1/FDTD_2D_libre.m",
+      "sha256": "6bf44703f806f5b09e3399837f803fda4656083e0765f9f7902f0e464c70c0b2",
+      "duplicate_of": "",
+      "experiment_ids": "15,16,17,18",
+      "review": "Several incompatible point/line and boundary variants; separated into explicit experiments."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/FDTD_2D_4/FDTD_2D_1_2_Rendijas.m",
+      "sha256": "2a074aabe276d1d9a05d97b4254c90228cb214f38733555724c29444f1e9c5de",
+      "duplicate_of": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_4/FDTD_2D_1_2_Rendijas.m",
+      "experiment_ids": "25,26,27,28,29,30",
+      "review": "Single/double slit branches; explicit aperture widths, PEC, detector averaging and far-field guide."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/FDTD_2D_4/FDTD_2D_1_2_Rendijas_modi.m",
+      "sha256": "e9d6b96c0e59ca67c0ac889d60ecd2e037eafeb0c29a7ab20d71fe157ccd1ace",
+      "duplicate_of": "",
+      "experiment_ids": "25,26,27,28,29,30",
+      "review": "Plot/parameter variants include 532/700 nm and ambiguous slit half-width; thesis figure cases kept separately."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/FDTD_2D_5/FDTD_2D_refraccion.m",
+      "sha256": "f06e32b34b12b5ad68cd1ab61dd1cf45f3417ab6da58685300e5095624218086",
+      "duplicate_of": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/FDTD_2D_5/FDTD_2D_refraccion.m",
+      "experiment_ids": "31,32,34",
+      "review": "Draft assigns ER linearly and never uses it in ga; interfaces reconstructed from thesis chapter 6."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/refraccion/refraccionlarry.m",
+      "sha256": "f843cfb8ed8250125762754c49912f83119d383a950015e95f96f48dec6eccca",
+      "duplicate_of": "",
+      "experiment_ids": "36",
+      "review": "Diagonal source is active; no material interface is actually built."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/refraccion/refraccionmodi.m",
+      "sha256": "0b7e64e8cb69758c99bbfd98a4d29a2d160aca3c6a9af2c58ff4df9129b60ce2",
+      "duplicate_of": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/refraccion/refraccionmodi.m",
+      "experiment_ids": "31,35",
+      "review": "ABC/PML hybrid draft; clean PML and first-order Mur variants supplied."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/refraccion/refraccionmur.m",
+      "sha256": "b239a0be392042987b9fb007f361c86445077692910ba3fa1e4cf38d2aa6ee13",
+      "duplicate_of": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/2D/refraccion/refraccionmur.m",
+      "experiment_ids": "35",
+      "review": "Mur prototype; documented first-order replacement and consistent source frequency."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/refraccion/refraccionpml.m",
+      "sha256": "75367ea1356ebf66695cc472687a47ff7c8d8306e9008c72121e57b20874f257",
+      "duplicate_of": "",
+      "experiment_ids": "34",
+      "review": "Outer folder has 1.5/2.5/1.5. Nested draft has index1=0 and divides by zero; thesis values take precedence."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/2D/refraccion/refraccionpml1.m",
+      "sha256": "fd6a9148f450d4acc77a70b2edc9a761994f40ba3f56dd57b186127050b34443",
+      "duplicate_of": "",
+      "experiment_ids": "31,32,33",
+      "review": "Nested draft n2=2, outer n2=4; thesis n2=2.1 plus stated n2=4 and true PEC cases supplied."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Codigos terminados/Interfaz Grafica/interfaz1D.m",
+      "sha256": "f85286f67aedf71edb958bcb44f0c75502d96c5967a277ca4c65324c4623e41b",
+      "duplicate_of": "",
+      "experiment_ids": "01-14",
+      "review": "GUIDE callback scaffold; Simular_Callback is empty. Replaced by independent scripts/CLI, not a GUI port."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Tesis correcciones cristian/mcode/Program31_refraction_at_interface_of_two_media.m",
+      "sha256": "8325308ff66d057817592a84bb2d2674e48c15a5b0e324c7a95ec460359fc62e",
+      "duplicate_of": "",
+      "experiment_ids": "35",
+      "review": "Reference code copied in four thesis folders; negative index is squared into positive epsilon and is not a negative-index material model."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Tesis correcciones cristian+cardona/mcode/Program31_refraction_at_interface_of_two_media.m",
+      "sha256": "8325308ff66d057817592a84bb2d2674e48c15a5b0e324c7a95ec460359fc62e",
+      "duplicate_of": "Correcciones 2 con nuevas cosas/Tesis correcciones cristian/mcode/Program31_refraction_at_interface_of_two_media.m",
+      "experiment_ids": "35",
+      "review": "Reference code copied in four thesis folders; negative index is squared into positive epsilon and is not a negative-index material model."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/Tesis1/mcode/Program31_refraction_at_interface_of_two_media.m",
+      "sha256": "8325308ff66d057817592a84bb2d2674e48c15a5b0e324c7a95ec460359fc62e",
+      "duplicate_of": "Correcciones 2 con nuevas cosas/Tesis correcciones cristian/mcode/Program31_refraction_at_interface_of_two_media.m",
+      "experiment_ids": "35",
+      "review": "Reference code copied in four thesis folders; negative index is squared into positive epsilon and is not a negative-index material model."
+    },
+    {
+      "path": "Correcciones 2 con nuevas cosas/presentacion/titre-version-courte/mcode/Program31_refraction_at_interface_of_two_media.m",
+      "sha256": "8325308ff66d057817592a84bb2d2674e48c15a5b0e324c7a95ec460359fc62e",
+      "duplicate_of": "Correcciones 2 con nuevas cosas/Tesis correcciones cristian/mcode/Program31_refraction_at_interface_of_two_media.m",
+      "experiment_ids": "35",
+      "review": "Reference code copied in four thesis folders; negative index is squared into positive epsilon and is not a negative-index material model."
+    },
+    {
+      "path": "FDTD2D.m",
+      "sha256": "8d6e7f224291c98efad5d1ffcb0f1a5e32cf37a3b0d53ec67c827cf03bd31003",
+      "duplicate_of": "",
+      "experiment_ids": "37",
+      "review": "Root 700 nm double slit, dx=41.17 nm, 400x400. Sampled aperture dimensions documented explicitly."
+    }
+  ]
+}

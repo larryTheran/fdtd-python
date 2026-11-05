@@ -1,0 +1,33 @@
+{
+  "name": "10_integral_loss_0p01",
+  "title": "1D integral-current loss, sigma=0.01 S/m",
+  "thesis": "4.1.10; Fig. 4-19; printed p. 62",
+  "cells": 400,
+  "steps": 3000,
+  "wavelength": 0.1224744871391589,
+  "points_per_wavelength": 10.0,
+  "dx": 0.01,
+  "courant": 0.5,
+  "boundary": "delay",
+  "source": "gaussian",
+  "injection": "tfsf",
+  "source_cell": 19,
+  "tau_periods": 0.5,
+  "layers": [
+    {
+      "start": 149,
+      "stop": 300,
+      "epsilon_r": 1.5,
+      "sigma": 0.01
+    }
+  ],
+  "loss_model": "integral",
+  "spectra": true,
+  "snapshots": [
+    250,
+    350,
+    550,
+    1300
+  ],
+  "notes": "D/E/I conductive model with corrected positive denominator. Consistent cm-grid reinterpretation; original optical labels conflicted with the actual time step. No fitted 70% or 90% loss target."
+}

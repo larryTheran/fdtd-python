@@ -1,0 +1,23 @@
+{
+  "final_peak_field": 2.1938418295005286,
+  "final_energy_proxy": 7.984300775749834e-09,
+  "peak_energy_proxy": 7.9978675442207e-09,
+  "remaining_energy_fraction": 0.9983037017810241,
+  "dt_seconds": 8.339102379953801e-16,
+  "dx_meters": 5e-07,
+  "steps": 1600,
+  "dy_meters": 5e-07,
+  "average_steps": 320,
+  "refraction": [
+    {
+      "interface_y": 120,
+      "index": 1.0,
+      "snell_angle_deg": 59.35755096415355,
+      "measured_phase_angle_deg": 52.535791371975684,
+      "note": "Local diagnostic; finite beams and standing waves affect phase gradients"
+    }
+  ],
+  "simulation_seconds": 1.0123262499691918,
+  "numpy_version": "2.5.3",
+  "notes": "First-order Mur replacement for the draft second-order ABC; no artificial magnetic bulk loss. Positive-index conventional dielectric."
+}

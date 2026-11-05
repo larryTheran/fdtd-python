@@ -1,0 +1,136 @@
+{
+  "repository": "larryTheran/fdtd-python",
+  "release_tag": "results-2026-11-04",
+  "total_files": 491,
+  "total_bytes": 2889417070,
+  "experiments_by_dimension": {
+    "1d": 14,
+    "2d": 24,
+    "3d": 24
+  },
+  "archives": [
+    {
+      "name": "fdtd-results-1d.zip",
+      "dimension": "1d",
+      "size_bytes": 14886579,
+      "sha256": "ac8005524340c5f3f4fdee1134483131bd8265770fae14977bf8c75d49e27344",
+      "files": 107,
+      "experiments": [
+        "01_free_space",
+        "02_absorbing_boundary",
+        "03_tfsf_pulse",
+        "04_periodic_boundary",
+        "05_free_space_spectra",
+        "06_lossless_two_layers",
+        "07_configurable_layers",
+        "08_ohmic_optical",
+        "09_ohmic_centimeter",
+        "10_integral_loss_0p01",
+        "11_integral_loss_0p004",
+        "12_integral_loss_optical",
+        "13_periodic_dielectric_stack",
+        "14_pec_reflection"
+      ],
+      "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-1d.zip"
+    },
+    {
+      "name": "fdtd-results-2d.zip",
+      "dimension": "2d",
+      "size_bytes": 451940122,
+      "sha256": "66c2776ffc670cff35cb298d7384915fc5091c2bfd1234ba4575ce757a2e693e",
+      "files": 176,
+      "experiments": [
+        "15_free_space_sine",
+        "16_free_space_modulated",
+        "17_free_space_gaussian",
+        "18_periodic_xy",
+        "19_pml_xy",
+        "20_pml_x_periodic_y",
+        "21_periodic_x_pml_y",
+        "22_huygens_plane_wave",
+        "23_tfsf_plane_wave",
+        "24_plane_wave_lossy_material",
+        "25_single_slit_L25",
+        "26_single_slit_L30",
+        "27_single_slit_far_field",
+        "28_double_slit_L5",
+        "29_double_slit_L15",
+        "30_double_slit_b5_L100",
+        "31_refraction_two_media",
+        "32_high_index_reflection",
+        "33_specular_pec_mirror",
+        "34_refraction_three_media",
+        "35_mur_refraction",
+        "36_diagonal_huygens_array",
+        "37_root_double_slit_700nm",
+        "38_waveguide_bend"
+      ],
+      "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-2d.zip"
+    },
+    {
+      "name": "fdtd-results-3d-part-01.zip",
+      "dimension": "3d",
+      "size_bytes": 890866696,
+      "sha256": "fa2e3f808ed735d23b7c36746bea4365ea1e889f59fedf8166d27caffdac3f52",
+      "files": 113,
+      "experiments": [
+        "15_free_space_sine_3d",
+        "16_free_space_modulated_3d",
+        "17_free_space_gaussian_3d",
+        "18_periodic_xy_3d",
+        "19_pml_xy_3d",
+        "20_pml_x_periodic_y_3d",
+        "21_periodic_x_pml_y_3d",
+        "22_huygens_plane_wave_3d",
+        "23_tfsf_plane_wave_3d",
+        "24_plane_wave_lossy_material_3d",
+        "25_single_slit_L25_3d",
+        "26_single_slit_L30_3d",
+        "27_single_slit_far_field_3d",
+        "28_double_slit_L5_3d"
+      ],
+      "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-01.zip"
+    },
+    {
+      "name": "fdtd-results-3d-part-02.zip",
+      "dimension": "3d",
+      "size_bytes": 777678194,
+      "sha256": "8e62f2c880aa869c5247f8e5c2772c6e4ab163768501962b93f6749aeed3ea2c",
+      "files": 56,
+      "experiments": [
+        "29_double_slit_L15_3d",
+        "30_double_slit_b5_L100_3d",
+        "31_refraction_two_media_3d",
+        "32_high_index_reflection_3d",
+        "33_specular_pec_mirror_3d",
+        "34_refraction_three_media_3d",
+        "35_mur_refraction_3d"
+      ],
+      "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-02.zip"
+    },
+    {
+      "name": "fdtd-results-3d-part-03.zip",
+      "dimension": "3d",
+      "size_bytes": 753970178,
+      "sha256": "e223881a6d4edc119cea5992440435dd857c84b79b109f9bca088dadc0dcdd6d",
+      "files": 24,
+      "experiments": [
+        "36_diagonal_huygens_array_3d",
+        "37_root_double_slit_700nm_3d",
+        "38_waveguide_bend_3d"
+      ],
+      "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-3d-part-03.zip"
+    },
+    {
+      "name": "fdtd-results-support.zip",
+      "dimension": "support",
+      "size_bytes": 155973,
+      "sha256": "989be570eede52e369659626c81e701f8faa195b7a6fb7dad40d7be329420a44",
+      "files": 15,
+      "experiments": [],
+      "download_url": "https://github.com/larryTheran/fdtd-python/releases/download/results-2026-11-04/fdtd-results-support.zip"
+    }
+  ],
+  "verification": "Every ZIP member SHA256 matches its source file record; complete source-file coverage verified",
+  "secret_scan_findings": []
+}

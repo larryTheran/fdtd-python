@@ -1,0 +1,42 @@
+{
+  "name": "19_pml_xy_3d",
+  "origin_2d": "experiments/two_d/19_pml_xy.py",
+  "grid": [
+    200,
+    200,
+    64
+  ],
+  "steps": 700,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 11.807360291015357,
+  "dt_s": 8.872804932270845e-17,
+  "spacing_m": [
+    5.3200000000000007e-08,
+    5.3200000000000007e-08,
+    5.3200000000000007e-08
+  ],
+  "duration_s": 6.210963452589592e-14,
+  "cfl_ratio": 0.8660254037844387,
+  "minimum_cells_per_material_wavelength": 10.0,
+  "field_component_max": {
+    "ex": 1.589304474691744e-07,
+    "ey": 1.5893168381353462e-07,
+    "ez": 3.116795141977491e-07,
+    "hx": 2.0628643682130132e-08,
+    "hy": 2.063510429195503e-08,
+    "hz": 1.0601449718095068e-09
+  },
+  "energy_final_over_peak": 1.652690023465414e-10,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 160,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved."
+}

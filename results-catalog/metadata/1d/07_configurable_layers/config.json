@@ -1,0 +1,45 @@
+{
+  "name": "07_configurable_layers",
+  "title": "1D configurable dielectric stack",
+  "thesis": "1D/FDTD_1D_5 MATLAB extension of 4.1.8",
+  "cells": 400,
+  "steps": 4000,
+  "wavelength": 5.3e-07,
+  "points_per_wavelength": 10.0,
+  "dx": null,
+  "courant": 0.5,
+  "boundary": "delay",
+  "source": "gaussian",
+  "injection": "tfsf",
+  "source_cell": 9,
+  "tau_periods": 0.5,
+  "layers": [
+    {
+      "start": 149,
+      "stop": 199,
+      "epsilon_r": 2,
+      "sigma": 0.0
+    },
+    {
+      "start": 199,
+      "stop": 249,
+      "epsilon_r": 4,
+      "sigma": 0.0
+    },
+    {
+      "start": 249,
+      "stop": 300,
+      "epsilon_r": 2,
+      "sigma": 0.0
+    }
+  ],
+  "loss_model": "ohmic",
+  "spectra": true,
+  "snapshots": [
+    300,
+    900,
+    2000,
+    4000
+  ],
+  "notes": "Edit the Layer list to set any number of slabs; replaces interactive MATLAB input prompts."
+}

@@ -1,0 +1,27 @@
+{
+  "name": "02_absorbing_boundary",
+  "title": "1D pulse with the thesis delay ABC",
+  "thesis": "4.1.5; Fig. 4-7; printed p. 45",
+  "cells": 200,
+  "steps": 300,
+  "wavelength": 5.32e-07,
+  "points_per_wavelength": 10.0,
+  "dx": 5.3200000000000007e-08,
+  "courant": 0.5,
+  "boundary": "delay",
+  "source": "gaussian",
+  "injection": "soft",
+  "source_cell": 99,
+  "tau_periods": 0.5,
+  "layers": [],
+  "loss_model": "ohmic",
+  "spectra": false,
+  "snapshots": [
+    100,
+    150,
+    200,
+    250,
+    300
+  ],
+  "notes": "The thesis calls this PEC. It is a two-step delay absorbing boundary at S=0.5. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+}

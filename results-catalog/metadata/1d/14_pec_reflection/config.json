@@ -1,0 +1,27 @@
+{
+  "name": "14_pec_reflection",
+  "title": "1D reflection from actual PEC endpoints",
+  "thesis": "Supplement: clarify boundary terminology in 4.1.5",
+  "cells": 200,
+  "steps": 600,
+  "wavelength": 5e-07,
+  "points_per_wavelength": 10.0,
+  "dx": null,
+  "courant": 0.5,
+  "boundary": "pec",
+  "source": "gaussian",
+  "injection": "soft",
+  "source_cell": 99,
+  "tau_periods": 0.5,
+  "layers": [],
+  "loss_model": "ohmic",
+  "spectra": false,
+  "snapshots": [
+    100,
+    200,
+    300,
+    450,
+    600
+  ],
+  "notes": ""
+}

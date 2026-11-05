@@ -1,0 +1,42 @@
+{
+  "name": "22_huygens_plane_wave_3d",
+  "origin_2d": "experiments/two_d/22_huygens_plane_wave.py",
+  "grid": [
+    200,
+    200,
+    8
+  ],
+  "steps": 700,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 1.416640083072707,
+  "dt_s": 8.872804932270845e-17,
+  "spacing_m": [
+    5.3200000000000007e-08,
+    5.3200000000000007e-08,
+    5.3200000000000007e-08
+  ],
+  "duration_s": 6.210963452589592e-14,
+  "cfl_ratio": 0.8660254037844387,
+  "minimum_cells_per_material_wavelength": 10.0,
+  "field_component_max": {
+    "ex": 0.0,
+    "ey": 0.0,
+    "ez": 1.0528461933135986,
+    "hx": 1.0528484582901,
+    "hy": 0.0,
+    "hz": 0.0
+  },
+  "energy_final_over_peak": 1.0,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 160,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "Sources span x and propagate along y, so x is periodic and y is PML. The thesis caption swaps these axes. Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. Uniform x-z source sheet; periodic z with eight cells gives the depth-independent plane-wave calibration limit of the six-component solver."
+}

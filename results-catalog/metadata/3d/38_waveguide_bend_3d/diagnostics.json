@@ -1,0 +1,43 @@
+{
+  "name": "38_waveguide_bend_3d",
+  "origin_2d": "experiments/supplemental/38_waveguide_bend.py",
+  "grid": [
+    430,
+    430,
+    64
+  ],
+  "steps": 4200,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 554.8298048329998,
+  "dt_s": 1.3605903883082517e-16,
+  "spacing_m": [
+    8.157894736842106e-08,
+    8.157894736842106e-08,
+    8.157894736842106e-08
+  ],
+  "duration_s": 5.714479630894657e-13,
+  "cfl_ratio": 0.8660254037844387,
+  "minimum_cells_per_material_wavelength": 10.000000145296644,
+  "field_component_max": {
+    "ex": 0.7161157727241516,
+    "ey": 1.6224117279052734,
+    "ez": 1.8907465934753418,
+    "hx": 3.924408435821533,
+    "hy": 3.174753427505493,
+    "hz": 0.4272797405719757
+  },
+  "energy_final_over_peak": 0.9969108135047706,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 304,
+  "numpy_version": "1.26.4",
+  "solver_sha256": {
+    "three_d.py": "c1eeae2c42a0a7e532f68d331f0af3d0b15b323d08de0840e911b06b52efab19",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "Reconstruction of intended 20 um-radius, 0.775 um-width bend. Includes a scalar eigenmode solver to replace missing ezmode; no claim of exact agreement with the incomplete 3D effective-index prototype. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Full rectangular dielectric core (n=1.9), height=0.775 \u03bcm, air above and n=1.52 substrate below. Scalar transverse eigenfunction seeds Ez; this is not a calibrated vector port mode.",
+  "scalar_seed_neff": 1.6251787532835262
+}

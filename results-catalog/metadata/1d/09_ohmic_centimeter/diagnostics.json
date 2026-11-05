@@ -1,0 +1,16 @@
+{
+  "final_peak_field": 0.0015057582963661365,
+  "final_energy_proxy": 2.9083602404876598e-05,
+  "peak_energy_proxy": 0.1252138965064482,
+  "remaining_energy_fraction": 0.00023227136297430744,
+  "dt_seconds": 1.6678204759907604e-11,
+  "dx_meters": 0.01,
+  "steps": 2000,
+  "valid_frequency_bins": 204,
+  "max_abs_spectral_residual": 0.8804424795315656,
+  "median_reflectance": 0.12372288489788366,
+  "median_transmittance": 1.1571569076685174e-05,
+  "simulation_seconds": 0.03995895804837346,
+  "numpy_version": "2.5.3",
+  "notes": "Consistent microwave reinterpretation: dx=1 cm, lambda=20 cm, sigma=0.04 S/m. This is not an optical simulation."
+}

@@ -1,0 +1,18 @@
+{
+  "final_peak_field": 2.371319812931104,
+  "final_energy_proxy": 2.6615515197999784e-11,
+  "peak_energy_proxy": 3.022939109025344e-11,
+  "remaining_energy_fraction": 0.8804515816589227,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 900,
+  "dy_meters": 5.3200000000000007e-08,
+  "average_steps": 160,
+  "detector_distance_m": 1.5960000000000003e-06,
+  "slit_width_m": 5.32e-07,
+  "fresnel_number_each_slit": 0.33333333333333337,
+  "fresnel_number_full_aperture": 0.33333333333333337,
+  "simulation_seconds": 0.25569037499371916,
+  "numpy_version": "2.5.3",
+  "notes": "10 cells per vacuum wavelength; exact PEC obstacle; detector distance measured from the exit face. Periodic x represents repeated apertures and can affect late-time patterns."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "34_refraction_three_media_3d",
+  "origin_2d": "experiments/two_d/34_refraction_three_media.py",
+  "grid": [
+    250,
+    300,
+    64
+  ],
+  "steps": 2200,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 65.42033574997913,
+  "dt_s": 3.549121972908338e-17,
+  "spacing_m": [
+    2.1280000000000003e-08,
+    2.1280000000000003e-08,
+    2.1280000000000003e-08
+  ],
+  "duration_s": 7.808068340398344e-14,
+  "cfl_ratio": 0.5773502691896256,
+  "minimum_cells_per_material_wavelength": 10.0,
+  "field_component_max": {
+    "ex": 0.40312349796295166,
+    "ey": 0.4366927146911621,
+    "ez": 2.34269118309021,
+    "hx": 2.3002848625183105,
+    "hy": 2.634082555770874,
+    "hz": 0.06747647374868393
+  },
+  "energy_final_over_peak": 1.0,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 400,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "Three dielectric regions with parallel interfaces; first and last index are equal. Run extended to sample the final region. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Gaussian beam in both transverse dimensions; x phase delay preserves the original incidence angle."
+}

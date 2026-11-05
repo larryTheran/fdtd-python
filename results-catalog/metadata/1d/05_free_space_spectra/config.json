@@ -1,0 +1,27 @@
+{
+  "name": "05_free_space_spectra",
+  "title": "1D reflection and transmission in vacuum",
+  "thesis": "4.1.7; Figs. 4-12, 4-13; printed pp. 51-52",
+  "cells": 200,
+  "steps": 800,
+  "wavelength": 5.32e-07,
+  "points_per_wavelength": 10.0,
+  "dx": 5.3200000000000007e-08,
+  "courant": 0.5,
+  "boundary": "delay",
+  "source": "gaussian",
+  "injection": "tfsf",
+  "source_cell": 40,
+  "tau_periods": 0.5,
+  "layers": [],
+  "loss_model": "ohmic",
+  "spectra": true,
+  "snapshots": [
+    100,
+    150,
+    200,
+    250,
+    300
+  ],
+  "notes": "Run extended to let the reference pulse leave; left monitor is inside the total-field region and baseline-subtracted. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+}

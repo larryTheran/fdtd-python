@@ -1,0 +1,12 @@
+{
+  "final_peak_field": 0.0012229256194058848,
+  "final_energy_proxy": 9.010877897572581e-13,
+  "peak_energy_proxy": 6.710153615435547e-07,
+  "remaining_energy_fraction": 1.3428720732778182e-06,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 300,
+  "simulation_seconds": 0.00287891598418355,
+  "numpy_version": "2.5.3",
+  "notes": "The thesis calls this PEC. It is a two-step delay absorbing boundary at S=0.5. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+}

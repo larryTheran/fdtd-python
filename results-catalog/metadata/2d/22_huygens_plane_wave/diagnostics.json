@@ -1,0 +1,14 @@
+{
+  "final_peak_field": 1.0528463591145607,
+  "final_energy_proxy": 5.1988619647834896e-11,
+  "peak_energy_proxy": 5.223766497231431e-11,
+  "remaining_energy_fraction": 0.995232456798913,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 700,
+  "dy_meters": 5.3200000000000007e-08,
+  "average_steps": 160,
+  "simulation_seconds": 0.18988408392760903,
+  "numpy_version": "2.5.3",
+  "notes": "Sources span x and propagate along y, so x is periodic and y is PML. The thesis caption swaps these axes. Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+}

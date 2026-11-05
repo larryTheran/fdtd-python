@@ -1,0 +1,42 @@
+{
+  "name": "36_diagonal_huygens_array_3d",
+  "origin_2d": "experiments/supplemental/36_diagonal_huygens_array.py",
+  "grid": [
+    400,
+    400,
+    64
+  ],
+  "steps": 1000,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 61.17201862495858,
+  "dt_s": 1.167474333193532e-16,
+  "spacing_m": [
+    6.999999999999999e-08,
+    6.999999999999999e-08,
+    6.999999999999999e-08
+  ],
+  "duration_s": 1.1674743331935322e-13,
+  "cfl_ratio": 0.8660254037844386,
+  "minimum_cells_per_material_wavelength": 10.0,
+  "field_component_max": {
+    "ex": 0.5026662945747375,
+    "ey": 0.5026662349700928,
+    "ez": 1.106398344039917,
+    "hx": 0.19172817468643188,
+    "hy": 0.191727876663208,
+    "hz": 3.3527612686157227e-07
+  },
+  "energy_final_over_peak": 1.0,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 160,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "Source-only prototype: no refraction interface is active in refraccionlarry.m. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Twenty equal-phase z-directed dipoles along the original diagonal at the center z plane."
+}

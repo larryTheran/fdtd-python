@@ -1,0 +1,31 @@
+name: Simulation or workflow issue
+description: Report a reproducible numerical, CLI, plotting, or notebook problem.
+body:
+  - type: input
+    id: experiment
+    attributes:
+      label: Experiment and dimensionality
+      placeholder: 25_single_slit_L25, 2D
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Configuration and exact command
+      description: Include overrides and output path; remove credentials or unrelated private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+      description: Include the traceback and relevant diagnostics or analytical comparison.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Python, NumPy/SciPy/Matplotlib, operating system, backend/workers, and repository revision.
+    validations:
+      required: true

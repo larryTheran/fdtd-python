@@ -1,0 +1,23 @@
+{
+  "final_peak_field": 2.3088567537904314,
+  "final_energy_proxy": 7.87766583731747e-12,
+  "peak_energy_proxy": 7.87766583731747e-12,
+  "remaining_energy_fraction": 1.0,
+  "dt_seconds": 2.2182012330677113e-17,
+  "dx_meters": 1.3300000000000002e-08,
+  "steps": 1800,
+  "dy_meters": 1.3300000000000002e-08,
+  "average_steps": 640,
+  "refraction": [
+    {
+      "interface_y": 150,
+      "index": 4.0,
+      "snell_angle_deg": 13.94824618300795,
+      "measured_phase_angle_deg": 12.719052827968287,
+      "note": "Local diagnostic; finite beams and standing waves affect phase gradients"
+    }
+  ],
+  "simulation_seconds": 0.9043914170470089,
+  "numpy_version": "2.5.3",
+  "notes": "The specified n=1.5 to n=4 interface only partially reflects. It cannot produce total internal reflection. A separate PEC example supplies the ideal specular mirror."
+}

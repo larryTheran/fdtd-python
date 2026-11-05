@@ -1,0 +1,12 @@
+{
+  "final_peak_field": 0.9883618347093575,
+  "final_energy_proxy": 6.710153616262229e-07,
+  "peak_energy_proxy": 6.766543154175566e-07,
+  "remaining_energy_fraction": 0.9916664186382171,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 300,
+  "simulation_seconds": 0.0032176250824704766,
+  "numpy_version": "2.5.3",
+  "notes": "Corrected last-cell index from sin_nada_modi. Zero ghosts reflect; they are not an absorbing boundary. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+}

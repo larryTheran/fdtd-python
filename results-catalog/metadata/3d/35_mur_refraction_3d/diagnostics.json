@@ -1,0 +1,42 @@
+{
+  "name": "35_mur_refraction_3d",
+  "origin_2d": "experiments/supplemental/35_mur_refraction.py",
+  "grid": [
+    400,
+    240,
+    64
+  ],
+  "steps": 1600,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 49.54799508303404,
+  "dt_s": 8.339102379953801e-16,
+  "spacing_m": [
+    5e-07,
+    5e-07,
+    5e-07
+  ],
+  "duration_s": 1.3342563807926082e-12,
+  "cfl_ratio": 0.8660254037844386,
+  "minimum_cells_per_material_wavelength": 13.333333333333334,
+  "field_component_max": {
+    "ex": 0.20211030542850494,
+    "ey": 0.252437949180603,
+    "ez": 2.618044376373291,
+    "hx": 3.770846366882324,
+    "hy": 2.515803337097168,
+    "hz": 0.21682780981063843
+  },
+  "energy_final_over_peak": 0.999047818521891,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 320,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "First-order Mur replacement for the draft second-order ABC; no artificial magnetic bulk loss. Positive-index conventional dielectric. First-order Mur on all six faces; finite Gaussian beam in x-z. Depth is 64 cells."
+}

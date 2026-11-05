@@ -1,0 +1,16 @@
+{
+  "final_peak_field": 0.00053951788714133,
+  "final_energy_proxy": 3.9959622411932265e-14,
+  "peak_energy_proxy": 3.321306350471548e-07,
+  "remaining_energy_fraction": 1.2031296783646268e-07,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 800,
+  "valid_frequency_bins": 204,
+  "max_abs_spectral_residual": 2.220446049250313e-16,
+  "median_reflectance": 0.0,
+  "median_transmittance": 1.0,
+  "simulation_seconds": 0.01735687500331551,
+  "numpy_version": "2.5.3",
+  "notes": "Run extended to let the reference pulse leave; left monitor is inside the total-field region and baseline-subtracted. Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+}

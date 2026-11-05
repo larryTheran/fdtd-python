@@ -1,0 +1,14 @@
+{
+  "final_peak_field": 2.020817209553557,
+  "final_energy_proxy": 1.488689587979478e-10,
+  "peak_energy_proxy": 1.4964868067153772e-10,
+  "remaining_energy_fraction": 0.9947896508670108,
+  "dt_seconds": 1.3605903883082517e-16,
+  "dx_meters": 8.157894736842106e-08,
+  "steps": 4200,
+  "dy_meters": 8.157894736842106e-08,
+  "average_steps": 304,
+  "simulation_seconds": 4.503815250005573,
+  "numpy_version": "2.5.3",
+  "notes": "Reconstruction of intended 20 um-radius, 0.775 um-width bend. Includes a scalar eigenmode solver to replace missing ezmode; no claim of exact agreement with the incomplete 3D effective-index prototype."
+}

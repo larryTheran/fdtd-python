@@ -1,0 +1,42 @@
+{
+  "name": "16_free_space_modulated_3d",
+  "origin_2d": "experiments/two_d/16_free_space_modulated.py",
+  "grid": [
+    200,
+    200,
+    64
+  ],
+  "steps": 350,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 4.239473749999888,
+  "dt_s": 8.872804932270845e-17,
+  "spacing_m": [
+    5.3200000000000007e-08,
+    5.3200000000000007e-08,
+    5.3200000000000007e-08
+  ],
+  "duration_s": 3.105481726294796e-14,
+  "cfl_ratio": 0.8660254037844387,
+  "minimum_cells_per_material_wavelength": 10.0,
+  "field_component_max": {
+    "ex": 0.0010795941343531013,
+    "ey": 0.001079594250768423,
+    "ez": 0.0038465543184429407,
+    "hx": 0.0023831892758607864,
+    "hy": 0.0023831892758607864,
+    "hz": 1.0784546589093225e-09
+  },
+  "energy_final_over_peak": 0.10791716616419447,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 160,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files. PEC cavity in all three dimensions; the source is a localized z-directed electric dipole."
+}

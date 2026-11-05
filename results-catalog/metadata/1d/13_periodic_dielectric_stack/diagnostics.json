@@ -1,0 +1,16 @@
+{
+  "final_peak_field": 1.3196804836536412e-08,
+  "final_energy_proxy": 1.5669407461243187e-16,
+  "peak_energy_proxy": 0.037739959578515406,
+  "remaining_energy_fraction": 4.1519407111828126e-15,
+  "dt_seconds": 4.3890012526072635e-12,
+  "dx_meters": 0.002631578947368421,
+  "steps": 64000,
+  "valid_frequency_bins": 5752,
+  "max_abs_spectral_residual": 0.004360713044963549,
+  "median_reflectance": 0.23952313366000327,
+  "median_transmittance": 0.7605684976680216,
+  "simulation_seconds": 1.4906565829878673,
+  "numpy_version": "2.5.3",
+  "notes": "Periodic MATERIAL stack, open boundaries. Extended beyond the broken MATLAB 1000-sample source buffer and 3000-step loop to 64000 steps to capture high-Q resonances and delayed transmission; finite-record conservation checked."
+}

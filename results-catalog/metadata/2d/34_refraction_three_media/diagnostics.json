@@ -1,0 +1,30 @@
+{
+  "final_peak_field": 2.2747789840312684,
+  "final_energy_proxy": 1.8018031518772183e-11,
+  "peak_energy_proxy": 1.8018031518772183e-11,
+  "remaining_energy_fraction": 1.0,
+  "dt_seconds": 3.549121972908338e-17,
+  "dx_meters": 2.1280000000000003e-08,
+  "steps": 2200,
+  "dy_meters": 2.1280000000000003e-08,
+  "average_steps": 400,
+  "refraction": [
+    {
+      "interface_y": 100,
+      "index": 2.5,
+      "snell_angle_deg": 22.685500315867163,
+      "measured_phase_angle_deg": 21.991227011960397,
+      "note": "Local diagnostic; finite beams and standing waves affect phase gradients"
+    },
+    {
+      "interface_y": 200,
+      "index": 1.5,
+      "snell_angle_deg": 39.99999999999999,
+      "measured_phase_angle_deg": 42.77932686232947,
+      "note": "Local diagnostic; finite beams and standing waves affect phase gradients"
+    }
+  ],
+  "simulation_seconds": 1.1049902909999219,
+  "numpy_version": "1.26.4",
+  "notes": "Three dielectric regions with parallel interfaces; first and last index are equal. Run extended to sample the final region."
+}

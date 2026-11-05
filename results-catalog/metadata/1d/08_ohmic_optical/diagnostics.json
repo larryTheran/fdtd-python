@@ -1,0 +1,16 @@
+{
+  "final_peak_field": 0.002443522659605545,
+  "final_energy_proxy": 4.97368843440958e-12,
+  "peak_energy_proxy": 3.1465535325102765e-07,
+  "remaining_energy_fraction": 1.580678155645946e-05,
+  "dt_seconds": 4.1695511899769005e-17,
+  "dx_meters": 2.5e-08,
+  "steps": 4000,
+  "valid_frequency_bins": 409,
+  "max_abs_spectral_residual": 0.005396619321336726,
+  "median_reflectance": 0.2358390040309647,
+  "median_transmittance": 0.766550061359775,
+  "simulation_seconds": 0.0813324999762699,
+  "numpy_version": "2.5.3",
+  "notes": "Literal sigma=0.04 S/m at 500 nm gives very weak loss. The original visible attenuation used a later dx=0.01 m override; see experiment 09."
+}

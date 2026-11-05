@@ -1,0 +1,42 @@
+{
+  "name": "33_specular_pec_mirror_3d",
+  "origin_2d": "experiments/two_d/33_specular_pec_mirror.py",
+  "grid": [
+    250,
+    300,
+    64
+  ],
+  "steps": 1800,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 53.7729126670165,
+  "dt_s": 3.549121972908338e-17,
+  "spacing_m": [
+    2.1280000000000003e-08,
+    2.1280000000000003e-08,
+    2.1280000000000003e-08
+  ],
+  "duration_s": 6.388419551235008e-14,
+  "cfl_ratio": 0.5773502691896256,
+  "minimum_cells_per_material_wavelength": 16.666666666666668,
+  "field_component_max": {
+    "ex": 0.40308454632759094,
+    "ey": 0.43665051460266113,
+    "ez": 2.3474416732788086,
+    "hx": 2.306102991104126,
+    "hy": 2.634723424911499,
+    "hz": 0.05370909720659256
+  },
+  "energy_final_over_peak": 0.9999631727533691,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 400,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "Ideal PEC produces full reflection. This is a correction of the intended ideal-mirror experiment, not a claim that n=4 is a perfect conductor. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Gaussian beam in both transverse dimensions; x phase delay preserves the original incidence angle."
+}

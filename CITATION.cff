@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this project and the source thesis when using these simulations; retain the experiment and numerical-method provenance."
+title: "Python FDTD: 1D, 2D, and full-vector 3D experiments"
+type: software
+authors:
+  - given-names: "Larry R."
+    family-names: Theran
+repository-code: "https://github.com/larryTheran/fdtd-python"
+url: "https://github.com/larryTheran/fdtd-python"
+keywords:
+  - FDTD
+  - electromagnetics
+  - Yee grid
+  - computational physics
+  - Python

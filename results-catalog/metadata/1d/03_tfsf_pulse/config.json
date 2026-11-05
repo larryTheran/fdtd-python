@@ -1,0 +1,27 @@
+{
+  "name": "03_tfsf_pulse",
+  "title": "1D one-way TF/SF pulse",
+  "thesis": "4.1.6; Fig. 4-9; printed p. 48",
+  "cells": 200,
+  "steps": 300,
+  "wavelength": 5.32e-07,
+  "points_per_wavelength": 10.0,
+  "dx": 5.3200000000000007e-08,
+  "courant": 0.5,
+  "boundary": "delay",
+  "source": "gaussian",
+  "injection": "tfsf",
+  "source_cell": 99,
+  "tau_periods": 0.5,
+  "layers": [],
+  "loss_model": "ohmic",
+  "spectra": false,
+  "snapshots": [
+    100,
+    150,
+    200,
+    250,
+    300
+  ],
+  "notes": " Uses 532 nm and dx=lambda/10 from the thesis prose (printed p. 43), rather than the MATLAB draft wavelength."
+}

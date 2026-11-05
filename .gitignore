@@ -1,0 +1,40 @@
+# Local Python environments and caches
+.venv/
+venv/
+env/
+.cache/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytype/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Platform/editor state
+.DS_Store
+.AppleDouble
+.vscode/
+.idea/
+*.swp
+
+# Generated numerical results are published as release assets
+/results/
+/results_3d/
+/runs/
+/results_*_trial/
+/release-assets/
+*.zip
+*.tar
+*.tar.gz
+
+# Local compiled accelerators and sensitive environment files
+*.so
+*.dylib
+*.dll
+*.o
+.env
+.env.*
+!.env.example

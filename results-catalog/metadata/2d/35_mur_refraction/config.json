@@ -1,0 +1,51 @@
+{
+  "name": "35_mur_refraction",
+  "title": "Glass-air refraction with Mur boundaries",
+  "thesis": "Supplement: refraccionmur.m / Program31",
+  "nx": 400,
+  "ny": 240,
+  "steps": 1600,
+  "wavelength": 1e-05,
+  "points_per_wavelength": 10.0,
+  "dx": 5e-07,
+  "dy": null,
+  "courant": 0.5,
+  "boundary_x": "mur",
+  "boundary_y": "mur",
+  "pml_cells": 30,
+  "pml_reflection": 1e-08,
+  "geometry": "layers",
+  "background_index": 1.5,
+  "layers": [
+    {
+      "start": 120,
+      "stop": 240,
+      "epsilon_r": 1,
+      "sigma": 0.0
+    }
+  ],
+  "source": "sine",
+  "injection": "beam",
+  "source_x": 100,
+  "source_y": 20,
+  "source_width": 25,
+  "angle_deg": 35,
+  "tau_periods": 0.5,
+  "wall_y": 80,
+  "wall_thickness": 2,
+  "slit_count": 1,
+  "slit_width": 10,
+  "slit_gap": 10,
+  "detector_y": null,
+  "average_cycles": 8,
+  "snapshots": [
+    200,
+    400,
+    700,
+    1000
+  ],
+  "bend_radius": 2e-05,
+  "bend_width": 7.75e-07,
+  "bend_core_index": 1.9,
+  "notes": "First-order Mur replacement for the draft second-order ABC; no artificial magnetic bulk loss. Positive-index conventional dielectric."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "32_high_index_reflection_3d",
+  "origin_2d": "experiments/two_d/32_high_index_reflection.py",
+  "grid": [
+    250,
+    300,
+    64
+  ],
+  "steps": 1800,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 55.25548633397557,
+  "dt_s": 2.2182012330677113e-17,
+  "spacing_m": [
+    1.3300000000000002e-08,
+    1.3300000000000002e-08,
+    1.3300000000000002e-08
+  ],
+  "duration_s": 3.99276221952188e-14,
+  "cfl_ratio": 0.5773502691896258,
+  "minimum_cells_per_material_wavelength": 10.0,
+  "field_component_max": {
+    "ex": 0.6097055673599243,
+    "ey": 0.661940336227417,
+    "ez": 2.1423122882843018,
+    "hx": 2.1093101501464844,
+    "hy": 2.8537299633026123,
+    "hz": 0.018208244815468788
+  },
+  "energy_final_over_peak": 1.0,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 640,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "The specified n=1.5 to n=4 interface only partially reflects. It cannot produce total internal reflection. A separate PEC example supplies the ideal specular mirror. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Gaussian beam in both transverse dimensions; x phase delay preserves the original incidence angle."
+}

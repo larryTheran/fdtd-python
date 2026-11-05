@@ -1,0 +1,23 @@
+{
+  "final_peak_field": 2.261734313182007,
+  "final_energy_proxy": 1.6296740500950247e-11,
+  "peak_energy_proxy": 1.6297275888652806e-11,
+  "remaining_energy_fraction": 0.9999671486384462,
+  "dt_seconds": 3.549121972908338e-17,
+  "dx_meters": 2.1280000000000003e-08,
+  "steps": 1800,
+  "dy_meters": 2.1280000000000003e-08,
+  "average_steps": 400,
+  "refraction": [
+    {
+      "interface_y": 150,
+      "index": 2.1,
+      "snell_angle_deg": 27.33124065859082,
+      "measured_phase_angle_deg": 25.50085204590327,
+      "note": "Local diagnostic; finite beams and standing waves affect phase gradients"
+    }
+  ],
+  "simulation_seconds": 0.856241500005126,
+  "numpy_version": "2.5.3",
+  "notes": "532 nm from thesis; 25 vacuum cells/wavelength. Finite phased beam replaces the under-resolved draft source. Angles are measured from +y; epsilon_r=n^2."
+}

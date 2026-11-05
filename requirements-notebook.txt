@@ -1,0 +1,4 @@
+# Optional: live previews and real-Jupyter smoke tests
+ipython>=8
+ipykernel>=6
+jupyter_client>=8

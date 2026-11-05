@@ -1,0 +1,18 @@
+{
+  "final_peak_field": 2.4204049315018556,
+  "final_energy_proxy": 4.736443993489984e-11,
+  "peak_energy_proxy": 5.3190735366222516e-11,
+  "remaining_energy_fraction": 0.8904640932070564,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 1700,
+  "dy_meters": 5.3200000000000007e-08,
+  "average_steps": 160,
+  "detector_distance_m": 1.5960000000000003e-05,
+  "slit_width_m": 5.32e-07,
+  "fresnel_number_each_slit": 0.03333333333333333,
+  "fresnel_number_full_aperture": 0.03333333333333333,
+  "simulation_seconds": 2.0860469579929486,
+  "numpy_version": "2.5.3",
+  "notes": "Extended domain with all-side PML to suppress replicas. Chosen L=300 cells gives full-aperture Fresnel number 0.033; exact L is not specified for Fig. 6-7."
+}

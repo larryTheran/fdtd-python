@@ -1,0 +1,16 @@
+{
+  "final_peak_field": 0.0001312209598772606,
+  "final_energy_proxy": 1.4206466746248779e-14,
+  "peak_energy_proxy": 3.339537887009581e-07,
+  "remaining_energy_fraction": 4.254021732021758e-08,
+  "dt_seconds": 4.4364024661354226e-17,
+  "dx_meters": 2.6600000000000003e-08,
+  "steps": 4000,
+  "valid_frequency_bins": 409,
+  "max_abs_spectral_residual": 0.003177908448686373,
+  "median_reflectance": 0.14038447102542911,
+  "median_transmittance": 0.8597462734855537,
+  "simulation_seconds": 0.0801228330237791,
+  "numpy_version": "2.5.3",
+  "notes": "Uses the thesis 532 nm rather than the draft 500 nm. 1-R-T is a finite-record spectral residual, not instantaneous stored energy."
+}

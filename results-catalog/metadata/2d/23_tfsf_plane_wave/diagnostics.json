@@ -1,0 +1,18 @@
+{
+  "final_peak_field": 1.4695995700986338e-08,
+  "final_energy_proxy": 5.885522764594166e-20,
+  "peak_energy_proxy": 0.0002598109128295992,
+  "remaining_energy_fraction": 2.265310067423639e-16,
+  "dt_seconds": 5.773502691896258e-13,
+  "dx_meters": 0.0003461705126546392,
+  "steps": 700,
+  "valid_frequency_bins": 118,
+  "max_abs_spectral_residual": 2.220446049250313e-16,
+  "median_reflectance": 0.0,
+  "median_transmittance": 1.0,
+  "dy_meters": 0.0003461705126546392,
+  "average_steps": 277,
+  "simulation_seconds": 0.4285005829297006,
+  "numpy_version": "2.5.3",
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "final_peak_field": 3.2041280512650583,
+  "final_energy_proxy": 1.6871974096639774e-10,
+  "peak_energy_proxy": 1.7015596348803502e-10,
+  "remaining_energy_fraction": 0.9915593759266729,
+  "dt_seconds": 6.86641689965396e-17,
+  "dx_meters": 4.117e-08,
+  "steps": 1600,
+  "dy_meters": 4.117e-08,
+  "average_steps": 272,
+  "detector_distance_m": 3.7053e-06,
+  "slit_width_m": 8.234e-08,
+  "fresnel_number_each_slit": 0.0036967093563746237,
+  "fresnel_number_full_aperture": 0.07485836446658611,
+  "simulation_seconds": 1.640032249968499,
+  "numpy_version": "2.5.3",
+  "notes": "Rotated to +y propagation. Integer sampled legacy intervals correspond to two 2-cell openings and a 5-cell opaque gap despite Ancho=5/Separacion=5. PEC replaces the 5.7e8 S/m obstacle; tiny background loss omitted."
+}

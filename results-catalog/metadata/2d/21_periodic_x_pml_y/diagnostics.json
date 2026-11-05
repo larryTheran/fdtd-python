@@ -1,0 +1,14 @@
+{
+  "final_peak_field": 0.01939940354967989,
+  "final_energy_proxy": 1.0267821040231109e-15,
+  "peak_energy_proxy": 6.387992751018816e-15,
+  "remaining_energy_fraction": 0.16073626631140905,
+  "dt_seconds": 8.872804932270845e-17,
+  "dx_meters": 5.3200000000000007e-08,
+  "steps": 700,
+  "dy_meters": 5.3200000000000007e-08,
+  "average_steps": 160,
+  "simulation_seconds": 0.1901319589233026,
+  "numpy_version": "2.5.3",
+  "notes": " Uses the 532 nm wavelength from thesis printed p. 72, rather than 50 GHz in the exploratory MATLAB files."
+}

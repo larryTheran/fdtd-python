@@ -1,0 +1,16 @@
+{
+  "final_peak_field": 4.448108542836796e-05,
+  "final_energy_proxy": 9.922347753911998e-16,
+  "peak_energy_proxy": 3.3269832332990177e-07,
+  "remaining_energy_fraction": 2.9823858607405887e-09,
+  "dt_seconds": 4.419724261375515e-17,
+  "dx_meters": 2.65e-08,
+  "steps": 4000,
+  "valid_frequency_bins": 409,
+  "max_abs_spectral_residual": 0.0029790972001040306,
+  "median_reflectance": 0.06920599836774292,
+  "median_transmittance": 0.9311383507419873,
+  "simulation_seconds": 0.08125279098749161,
+  "numpy_version": "2.5.3",
+  "notes": "Edit the Layer list to set any number of slabs; replaces interactive MATLAB input prompts."
+}

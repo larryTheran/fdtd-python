@@ -1,0 +1,42 @@
+{
+  "name": "37_root_double_slit_700nm_3d",
+  "origin_2d": "experiments/supplemental/37_root_double_slit_700nm.py",
+  "grid": [
+    400,
+    400,
+    64
+  ],
+  "steps": 1600,
+  "finite_fields": true,
+  "backend": "native",
+  "workers": 3,
+  "simulation_seconds": 101.28356645803433,
+  "dt_s": 6.86641689965396e-17,
+  "spacing_m": [
+    4.117e-08,
+    4.117e-08,
+    4.117e-08
+  ],
+  "duration_s": 1.0986267039446335e-13,
+  "cfl_ratio": 0.6123724356957945,
+  "minimum_cells_per_material_wavelength": 12.022704562316815,
+  "field_component_max": {
+    "ex": 0.2899080812931061,
+    "ey": 0.44068610668182373,
+    "ez": 3.038726806640625,
+    "hx": 2.1257317066192627,
+    "hy": 1.2179620265960693,
+    "hz": 0.37270382046699524
+  },
+  "energy_final_over_peak": 0.9757816615449078,
+  "energy_note": "Staggered-field proxy; includes PML and is not an exact discrete invariant or calibrated joules.",
+  "detector_note": "Mean sum of squared staggered electric components; not calibrated Poynting flux or antenna gain.",
+  "average_steps": 272,
+  "numpy_version": "2.5.3",
+  "solver_sha256": {
+    "three_d.py": "1fbf36b35b0844a8d38a75b546dd6a83b45bdc3756ffb43376dceaef3d5d6cc0",
+    "three_d_backend.py": "5fe0676b57a52a43cdda7714f9d884aeb8c4c2f5cce9a1a6b2594f03a308701d",
+    "three_d_kernel.c": "fffe88b3a8f1f7403f0d3751966bf28f521879e6b07836149f0211cd426cd8f4"
+  },
+  "notes": "Rotated to +y propagation. Integer sampled legacy intervals correspond to two 2-cell openings and a 5-cell opaque gap despite Ancho=5/Separacion=5. PEC replaces the 5.7e8 S/m obstacle; tiny background loss omitted. Added z depth is 64 cells, dz=dx, with 12-cell z PML. The x-y geometry, grid spacing and time-step count are preserved. Each former slit is now a finite rectangular aperture 24 cells high. Illumination has a 16-cell Gaussian radius in z."
+}
