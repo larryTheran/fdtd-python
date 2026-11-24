@@ -111,6 +111,11 @@ Three-dimensional arrays use `(x, y, z)` order and include `ex`, `ey`, `ez`, `hx
 
 ## Live plots in PyLab or Jupyter
 
+For any dimension, call an experiment's `main(CONFIG)` in a notebook cell to use
+its defaults. Pass a list to override settings, such as
+`main(CONFIG, ["--steps", "20", "--output", "runs/trial"])`. You can also run
+the original script with IPython's `%run` and the usual terminal flags.
+
 The 3D runner detects an IPython kernel and updates a single six-panel figure during execution: XY/XZ/YZ `Ez/Z0` sections over matching material maps, with step count, physical time, and the sampled energy proxy. It copies three 2D sections per published frame and retains no additional full-volume movie.
 
 [PyLab Native 0.7.3](https://github.com/larryTheran/pylab-native) supports these in-place Jupyter display-ID updates. In a fresh notebook kernel, import an experiment or use its `main(CONFIG)` entry point. After updating modules, restart the kernel once so cached imports are refreshed. Notebook preview defaults to four intermediate updates per second; actual speed depends on computation and PNG rendering.

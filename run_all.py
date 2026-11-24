@@ -4,6 +4,7 @@ import argparse
 import importlib.util
 import json
 from pathlib import Path
+from fdtd.cli import parse_arguments
 from fdtd.runner import run
 from dataclasses import replace
 
@@ -20,7 +21,7 @@ def experiments():
     return result
 
 
-def main():
+def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--list", action="store_true")
     p.add_argument("--only", nargs="+", help="Numeric experiment IDs or name prefixes")
@@ -30,7 +31,7 @@ def main():
     p.add_argument("--frames", type=int, default=60)
     p.add_argument("--no-plots", action="store_true")
     p.add_argument("--output", type=Path, default=ROOT/"results")
-    args = p.parse_args()
+    args = parse_arguments(p, argv)
     selected = [(path, c) for path, c in experiments()
                 if (not args.group or path.parent.name == args.group)
                 and (not args.only or any(c.name.startswith(k.zfill(2) if k.isdigit() else k) for k in args.only))]

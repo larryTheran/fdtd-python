@@ -8,6 +8,7 @@ import zipfile
 from dataclasses import asdict
 from pathlib import Path
 import numpy as np
+from fdtd.cli import parse_arguments
 from fdtd.three_d_runner import run,add_arguments,overrides
 
 ROOT=Path(__file__).resolve().parent
@@ -52,7 +53,7 @@ def main(argv=None):
     p.add_argument('--resume',action='store_true',help='Reuse complete outputs only when configuration and solver hashes match')
     p.add_argument('--only',nargs='+',help='Experiment IDs or name prefixes')
     p.add_argument('--output',type=Path,default=ROOT/'results_3d')
-    args=p.parse_args(argv)
+    args=parse_arguments(p, argv)
     selected=[(path,overrides(c,args)) for path,c in experiments() if not args.only or any(c.name.startswith(k.zfill(2) if k.isdigit() else k) for k in args.only)]
     if not selected: p.error('No matching 3D experiments')
     if args.list:
@@ -64,7 +65,8 @@ def main(argv=None):
         try:
             report=completed(c,args.output/c.name,args.gif,not args.no_plots) if args.resume else None
             if report is None:
-                result,report=run(c,args.output/c.name,args.gif,args.frames,not args.no_plots)
+                result,report=run(c,args.output/c.name,args.gif,args.frames,not args.no_plots,
+                                  live=args.live,live_stride=args.live_stride,live_fps=args.live_fps)
                 del result
             else:
                 print(f'{c.name}: verified existing full run; reused',flush=True)

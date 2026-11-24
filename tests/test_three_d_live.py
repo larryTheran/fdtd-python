@@ -133,6 +133,25 @@ def test_runner_auto_notebook_and_cli_options_are_observational(tmp_path,monkeyp
     assert parser.parse_args([]).live is None
 
 
+@pytest.mark.parametrize('flag,expected', [('--live', True), ('--no-live', False)])
+def test_batch_forwards_live_controls_for_each_simulation(tmp_path, monkeypatch, flag, expected):
+    import run_all_3d as batch
+
+    configs = [tiny(name='first'), tiny(name='second')]
+    monkeypatch.setattr(batch, 'experiments', lambda: [(None, config) for config in configs])
+    calls = []
+    def fake_run(config, output, gif, frames, plots, **kwargs):
+        calls.append((config.name, output, plots, kwargs))
+        return {}, {'name': config.name}
+    monkeypatch.setattr(batch, 'run', fake_run)
+
+    batch.main(['--output', str(tmp_path), '--no-plots', flag, '--live-stride', '7', '--live-fps', '1.5'])
+    assert calls == [
+        (c.name, tmp_path / c.name, False, dict(live=expected, live_stride=7, live_fps=1.5))
+        for c in configs
+    ]
+
+
 @pytest.mark.parametrize('stride,fps',[(0,4),(True,4),(1.5,4),(1,0),(1,float('inf')),(1,11)])
 def test_live_option_validation(stride,fps):
     with pytest.raises(ValueError): validate_options(stride,fps)

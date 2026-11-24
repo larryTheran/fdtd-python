@@ -3,15 +3,11 @@ import base64
 from io import BytesIO
 import math
 import operator
+from .cli import notebook_kernel
 
 
 def in_notebook():
-    try:
-        from IPython import get_ipython
-    except ImportError:
-        return False
-    shell = get_ipython()
-    return shell is not None and getattr(shell, 'kernel', None) is not None
+    return notebook_kernel() is not None
 
 
 def validate_options(stride, fps):

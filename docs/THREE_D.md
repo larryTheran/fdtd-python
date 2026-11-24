@@ -59,6 +59,11 @@ main(CONFIG, ["--live-fps", "2", "--live-stride", "5"])
 main(CONFIG, ["--no-live"])
 ```
 
+Use `main(CONFIG)` for defaults in an ordinary Jupyter cell. In IPython,
+`%run experiments_3d/38_waveguide_bend_3d.py --live-fps 2` accepts the same
+experiment flags as a terminal command. The batch runner also applies
+`--live`, `--no-live`, `--live-stride`, and `--live-fps` to each simulation it runs.
+
 `--live-fps` accepts values greater than zero and at most 10. `--live-stride` is a
 positive number of solver steps. Both limits apply. `--no-plots` disables automatic
 live previews as well; an explicit `--live` can request previews separately.

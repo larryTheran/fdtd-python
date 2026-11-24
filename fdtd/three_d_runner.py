@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 import time
 import numpy as np
+from .cli import parse_arguments
 from .config import C0
 from .three_d import simulate,spectrum
 
@@ -99,7 +100,7 @@ def main(config,argv=None):
     add_arguments(parser)
     parser.add_argument('--output',type=Path)
     parser.add_argument('--describe',action='store_true')
-    args=parser.parse_args(argv)
+    args=parse_arguments(parser, argv)
     config=overrides(config,args)
     if args.describe:
         print(json.dumps(asdict(config),indent=2)); return

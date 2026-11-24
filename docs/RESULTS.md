@@ -51,3 +51,16 @@ with np.load(folder / "data.npz", allow_pickle=False) as data:
 A new solver revision can differ from the solver hashes stored in historical diagnostics. Archived files preserve that history. To compare changes, rerun the matching script/configuration into a separate `--output` folder and record the current commit/environment, instead of overwriting the archive.
 
 Exact release archive names, byte counts, and per-file manifests are maintained by the result publication catalog.
+
+## Package a new snapshot
+
+Run the packer from a checkout containing completed simulations.
+
+```bash
+python scripts/pack_results.py --source . --catalog results-catalog \
+  --assets ../fdtd-release-assets --tag results-YYYY-MM-DD
+```
+
+Replace `YYYY-MM-DD` with the snapshot date. Keep the archives outside the checkout and use a dedicated catalog folder such as `results-catalog/`. The packer checks the input results for symbolic links before writing any output. Nested preview images and JSON files keep their experiment-relative paths in the catalog, so files from different runs can share a name.
+
+`SHA256SUMS` lists the archives and metadata files produced for this snapshot. Use that list to select the release assets if the output directory also contains older downloads.

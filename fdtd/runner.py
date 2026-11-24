@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import time
 import numpy as np
+from .cli import parse_arguments
 from .config import Config1D
 from .analysis import diagnostics
 
@@ -67,7 +68,7 @@ def main(config, argv=None):
     if not isinstance(config, Config1D):
         parser.add_argument("--angle", type=float, help="Beam angle in degrees from the +y normal")
         parser.add_argument("--detector-y", type=int, help="Detector row, zero based")
-    args = parser.parse_args(argv)
+    args = parse_arguments(parser, argv)
     if args.steps is not None:
         config = replace(config, steps=args.steps)
     if args.wavelength_nm is not None:

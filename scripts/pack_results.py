@@ -37,11 +37,17 @@ def digest_file(path: Path) -> str:
     return h.hexdigest()
 
 
+def reject_result_symlink(path: Path):
+    if path.is_symlink():
+        raise ValueError(f'Result symlinks require manual review: {path}')
+
+
 def files_under(directory: Path):
     for path in sorted(directory.rglob('*')):
-        if path.is_file() and not any(part in EXCLUDED_PARTS for part in path.relative_to(directory).parts):
-            if path.is_symlink():
-                raise ValueError(f'Result symlinks require manual review: {path.name}')
+        if any(part in EXCLUDED_PARTS for part in path.relative_to(directory).parts):
+            continue
+        reject_result_symlink(path)
+        if path.is_file():
             yield path
 
 
@@ -65,11 +71,13 @@ def inventory(source: Path):
     support = []
     for root_name in ('results', 'results_3d'):
         root = source / root_name
+        reject_result_symlink(root)
         if not root.is_dir():
             raise ValueError(f'Missing result folder: {root_name}')
         for child in sorted(root.iterdir()):
             if child.name in EXCLUDED_PARTS:
                 continue
+            reject_result_symlink(child)
             if child.is_dir():
                 contents = list(files_under(child))
                 config = parse_config(child)
@@ -120,8 +128,14 @@ def script_for(source, item):
 
 def create_packages(source, assets, catalog, repository, tag, target_bytes, replace):
     source = source.resolve(); assets = assets.resolve(); catalog = catalog.resolve()
-    if source == assets or source in assets.parents:
+    if assets.is_relative_to(source):
         raise ValueError('Assets must be outside the source tree')
+    if source.is_relative_to(catalog) or any(
+        catalog.is_relative_to(source / root) for root in ('results', 'results_3d')
+    ):
+        raise ValueError('The catalog must be separate from the source root and input results')
+    if assets.is_relative_to(catalog) or catalog.is_relative_to(assets):
+        raise ValueError('The catalog and assets need separate output directories')
     experiments, support = inventory(source)
     plans = archive_plan(experiments, support, target_bytes)
     assets.mkdir(parents=True, exist_ok=True)
@@ -179,13 +193,15 @@ def create_packages(source, assets, catalog, repository, tag, target_bytes, repl
             previews = []; metadata = []
             for path in item['files']:
                 if path.suffix.lower() == '.png':
-                    target=preview_dir/path.name; target.parent.mkdir(parents=True,exist_ok=True)
+                    target = preview_dir / path.relative_to(item['directory'])
+                    target.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(path,target)
                     if digest_file(target) != record_by_path[path.relative_to(source).as_posix()]['sha256']:
                         raise ValueError('Preview copy mismatch: '+path.name)
                     previews.append(target.relative_to(catalog).as_posix())
                 elif path.suffix.lower() == '.json':
-                    target=metadata_dir/path.name; target.parent.mkdir(parents=True,exist_ok=True)
+                    target = metadata_dir / path.relative_to(item['directory'])
+                    target.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(path,target)
                     if digest_file(target) != record_by_path[path.relative_to(source).as_posix()]['sha256']:
                         raise ValueError('Metadata copy mismatch: '+path.name)
@@ -219,7 +235,12 @@ def create_packages(source, assets, catalog, repository, tag, target_bytes, repl
     (assets/'results-manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
     (assets/'results-experiments.json').write_text(json.dumps(experiment_records,indent=2,ensure_ascii=False)+'\n')
     (assets/'results-archives.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False)+'\n')
-    (assets/'SHA256SUMS').write_text(''.join(f'{digest_file(path)}  {path.name}\n' for path in sorted(assets.iterdir()) if path.is_file() and path.name!='SHA256SUMS'))
+    checksums = {archive['name']: archive['sha256'] for archive in archive_summaries}
+    for name in ('results-manifest.json', 'results-experiments.json', 'results-archives.json'):
+        checksums[name] = digest_file(assets / name)
+    (assets / 'SHA256SUMS').write_text(''.join(
+        f'{checksum}  {name}\n' for name, checksum in sorted(checksums.items())
+    ))
     lines=['# Complete simulation results','',f'Snapshot: **{tag}** · {len(experiment_records)} experiments · {len(records)} files · {manifest["total_bytes"]:,} uncompressed bytes.','',
         'Every saved result file is included in the release ZIPs. The repository contains all static PNG previews and small JSON configurations/diagnostics for browsing. Numerical NPZ arrays, GIF animations, logs and original indexes are preserved in the downloadable archives.','',
         'Download the archives you need from [the result release](https://github.com/'+repository+'/releases/tag/'+tag+'). Extract at the repository root: ZIP members recreate the original `results/` and `results_3d/` folders. No recomputation is required.','',
